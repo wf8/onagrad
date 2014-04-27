@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{12}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -12,20 +12,95 @@
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
 %Type = Article
-\bibitem[{Dirac(1953)}]{Dirac1953888}
-\bibinfo{author}{Dirac, P.}, \bibinfo{year}{1953}.
-\newblock \bibinfo{title}{The lorentz transformation and absolute time}.
-\newblock \bibinfo{journal}{Physica} \bibinfo{volume}{19},
-  \bibinfo{pages}{888--896}.
-\newblock \DOIprefix\doi{10.1016/S0031-8914(53)80099-6}.
+\bibitem[{Camacho et~al.(2009)Camacho, Coulouris, Avagyan, Ma, Papadopoulos,
+  Bealer and Madden}]{blast}
+\bibinfo{author}{Camacho, C.}, \bibinfo{author}{Coulouris, G.},
+  \bibinfo{author}{Avagyan, V.}, \bibinfo{author}{Ma, N.},
+  \bibinfo{author}{Papadopoulos, J.}, \bibinfo{author}{Bealer, K.},
+  \bibinfo{author}{Madden, T.L.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{{BLAST}+: architecture and applications}.
+\newblock \bibinfo{journal}{BMC bioinformatics} \bibinfo{volume}{10},
+  \bibinfo{pages}{421}.
 %Type = Article
-\bibitem[{Feynman and {Vernon Jr.}(1963)}]{Feynman1963118}
-\bibinfo{author}{Feynman, R.}, \bibinfo{author}{{Vernon Jr.}, F.},
-  \bibinfo{year}{1963}.
-\newblock \bibinfo{title}{The theory of a general quantum system interacting
-  with a linear dissipative system}.
-\newblock \bibinfo{journal}{Annals of Physics} \bibinfo{volume}{24},
-  \bibinfo{pages}{118--173}.
-\newblock \DOIprefix\doi{10.1016/0003-4916(63)90068-X}.
+\bibitem[{Drummond and Rambaut(2007)}]{beast}
+\bibinfo{author}{Drummond, A.J.}, \bibinfo{author}{Rambaut, A.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Beast: Bayesian evolutionary analysis by sampling
+  trees}.
+\newblock \bibinfo{journal}{BMC evolutionary biology} \bibinfo{volume}{7},
+  \bibinfo{pages}{214}.
+%Type = Article
+\bibitem[{Edgar(2004)}]{edgar2004muscle}
+\bibinfo{author}{Edgar, R.C.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{{MUSCLE}: multiple sequence alignment with high
+  accuracy and high throughput}.
+\newblock \bibinfo{journal}{Nucleic acids research} \bibinfo{volume}{32},
+  \bibinfo{pages}{1792--1797}.
+%Type = Misc
+\bibitem[{Freyman(2014)}]{sumac}
+\bibinfo{author}{Freyman, W.A.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{{S}upermatrix {C}onstructor ({SUMAC})}.
+\newblock \bibinfo{howpublished}{\url{https://github.com/wf8/sumac}}.
+%Type = Article
+\bibitem[{Graham(2013)}]{graham}
+\bibinfo{author}{Graham, S.A.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Fossil records in the lythraceae}.
+\newblock \bibinfo{journal}{The Botanical Review} \bibinfo{volume}{79},
+  \bibinfo{pages}{48--145}.
+%Type = Article
+\bibitem[{Gr{\'\i}msson et~al.(2012)Gr{\'\i}msson, Zetter and Leng}]{grimsson}
+\bibinfo{author}{Gr{\'\i}msson, F.}, \bibinfo{author}{Zetter, R.},
+  \bibinfo{author}{Leng, Q.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Diverse fossil onagraceae pollen from a miocene
+  palynoflora of north-east china: early steps in resolving the phytogeographic
+  history of the family}.
+\newblock \bibinfo{journal}{Plant Systematics and Evolution}
+  \bibinfo{volume}{298}, \bibinfo{pages}{671--687}.
+%Type = Article
+\bibitem[{Lee et~al.(2013)Lee, Conran, Bannister, Kaulfuss and
+  Mildenhall}]{lee2013fossil}
+\bibinfo{author}{Lee, D.E.}, \bibinfo{author}{Conran, J.G.},
+  \bibinfo{author}{Bannister, J.M.}, \bibinfo{author}{Kaulfuss, U.},
+  \bibinfo{author}{Mildenhall, D.C.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{A fossil fuchsia (onagraceae) flower and an anther
+  mass with in situ pollen from the early miocene of new zealand}.
+\newblock \bibinfo{journal}{American journal of botany} \bibinfo{volume}{100},
+  \bibinfo{pages}{2052--2065}.
+%Type = Inproceedings
+\bibitem[{Miller et~al.(2010)Miller, Pfeiffer and Schwartz}]{cipres}
+\bibinfo{author}{Miller, M.A.}, \bibinfo{author}{Pfeiffer, W.},
+  \bibinfo{author}{Schwartz, T.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Creating the {CIPRES} science gateway for inference
+  of large phylogenetic trees}, in: \bibinfo{booktitle}{Gateway Computing
+  Environments Workshop (GCE), 2010}, \bibinfo{organization}{IEEE}. pp.
+  \bibinfo{pages}{1--8}.
+%Type = Misc
+\bibitem[{Rambaut et~al.(2013)Rambaut, Suchard and Drummond}]{tracer}
+\bibinfo{author}{Rambaut, A.}, \bibinfo{author}{Suchard, M.},
+  \bibinfo{author}{Drummond, A.J.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Tracer v1.6}.
+\newblock
+  \bibinfo{howpublished}{\url{http://tree.bio.ed.ac.uk/software/tracer/}}.
+%Type = Article
+\bibitem[{Stamatakis(2014)}]{raxml}
+\bibinfo{author}{Stamatakis, A.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{{RA}x{ML} {V}ersion 8: A tool for phylogenetic
+  analysis and post-analysis of large phylogenies}.
+\newblock \bibinfo{journal}{Bioinformatics} , \bibinfo{pages}{btu033}.
+%Type = Article
+\bibitem[{Suchard and Rambaut(2009)}]{beast2}
+\bibinfo{author}{Suchard, M.A.}, \bibinfo{author}{Rambaut, A.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Many-core algorithms for statistical phylogenetics}.
+\newblock \bibinfo{journal}{Bioinformatics} \bibinfo{volume}{25},
+  \bibinfo{pages}{1370--1376}.
+%Type = Article
+\bibitem[{Zhi-Chen et~al.(2004)Zhi-Chen, Wei-Ming and Fei}]{zhi}
+\bibinfo{author}{Zhi-Chen, S.}, \bibinfo{author}{Wei-Ming, W.},
+  \bibinfo{author}{Fei, H.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Fossil pollen records of extant angiosperms in
+  china}.
+\newblock \bibinfo{journal}{The Botanical Review} \bibinfo{volume}{70},
+  \bibinfo{pages}{425--458}.
 
 \end{thebibliography}
