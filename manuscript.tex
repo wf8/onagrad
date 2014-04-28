@@ -59,7 +59,7 @@ blah blah
 I downloaded all available DNA sequences from GenBank release 200 PLN division and
 performed an exhaustive all-by-all BLASTn \citep{blast} comparison for sequences in Onagraceae
 and Lythraceae.
-Using a BLASTn e-value of $1.0e^{-10}$ threshold and a sequence length
+Using a BLASTn e-value of $1.0 \times 10^{-10}$ threshold and a sequence length
 percent similarity cutoff of 0.5,
 I constructed clusters of putative homologs using a single-linkage hierarchical clustering algorithm.
 Subspecies names were removed from all sequences, and all but one sequence of each species was pruned from each cluster.
@@ -74,7 +74,7 @@ supermatrices for other taxonomic groups recognized in GenBank.
 
 
 \paragraph{Phylogenetic analyses} 
-Maximum likelihood analyses were performed with RAxML-HPC \citep{raxml} on the CIPRES Scientific Gateway \citep{cipres} 
+Maximum likelihood (ML) analyses were performed with RAxML-HPC \citep{raxml} on the CIPRES Scientific Gateway \citep{cipres} 
 using the rapid bootstrap heuristic and the GTRCAT nucleotide substitution model.
 I used the ML tree to select 15 taxa phylogenetically widely distributed in Lythraceae to act as outgroup for the divergence time analysis; 
 all other members of Lythraceae were subsequently removed from the supermatrix.
@@ -125,15 +125,48 @@ with the Markov k-state 1 parameter (Mk1) model \citep{lewis2001likelihood}.
 
 
 \paragraph{Supermatrix assembly}
-blah blah
+SUMAC evaluated 5571 Onagraceae and 2832 Lythraceae nucleotide sequences to construct the supermatrix. 
+The completed supermatrix consisted of 11 clusters of homologous sequences (Table \ref{clusters}).
+As used in the maximum likelihood analyses (before pruning the number of outgroup taxa), 
+the supermatrix contained 521 taxa, was 31862 nucleotides long, and contained 93.0\% missing data.
 
-\paragraph{Divergence time estimates}
-Here is a table with the mean divergence time estimates including \%95 confidence intervals....
 \begin{table*}
    \begin{adjustbox}{max width=\textwidth}
       \begin{tabular}{lllllll}
          \hline
-         Clade & Mean Age (Mya) & \%95 HPD Min & \%95 HPD Max \\ 
+         DNA Region & \# of Taxa & Aligned Length & Missing data (\%) & Taxon Coverage Density \\ 
+	 \hline
+         ITS & 453 & 1746 & 13.2 & 0.87 \\
+         trnL & 234 & 1429 & 55.2 & 0.45 \\
+         rpl16 & 91 & 1414 & 82.6 & 0.17 \\
+         rbcL & 77 & 1474 & 85.2 & 0.15 \\
+         rps16 & 74 & 1016 & 85.8 & 0.14 \\
+         rbcL & 64 & 1310 & 87.7 & 0.12 \\
+         PgiC2 & 47 & 4028 & 91.0 & 0.09 \\
+         matK & 37 & 921 & 92.9 & 0.07 \\
+         ndhF & 37 & 2063 & 92.9 & 0.07 \\
+         pgiC & 26 & 14709 & 95.0 & 0.05 \\
+         R5 & 18 & 3129 & 96.6 & 0.03 \\
+         \hline
+      \end{tabular}
+   \end{adjustbox}
+   \caption{Clusters of homologous sequences used to assemble the supermatrix.}
+   \label{clusters}
+\end{table*}
+
+\paragraph{Phylogeny and divergence time estimates}
+The topologies of the ML and Bayesian phylogenies were identical for all major clades within Onagraceae, 
+so only the Bayesian MCC tree (Figures \ref{posteriors} and \ref{genera}) is shown here.
+All Onagraceae genera described in \citet{wagner2007revised} were recovered as monophyletic clades with posterior probabilities of $> 0.95$
+except for sister genera \textit{Neoholmgrenia} and \textit{Camissoniopsis} (posterior = 0.31) (Figure \ref{posteriors}).
+Onagraceae was found to diverge from Lythraceae at 109 Mya (Figure \ref{genera}). 
+Divergence time estimates of other major clades and 95\% highest posterior density (HPD) intervals can be seen in Table \ref{times}.
+
+\begin{table*}
+   \begin{adjustbox}{max width=\textwidth}
+      \begin{tabular}{lllllll}
+         \hline
+         Clade & Mean Age (Mya) & 95\% HPD Min & 95\% HPD Max \\ 
 	 \hline
          Onagraceae / Lythraceae & 109 & 88 & 131 \\
          \textit{Ludwigia} & 97 & 76 & 118 \\
@@ -171,7 +204,7 @@ blah blah
     \caption{
        Bayesian maximum clade credibility phylogeny of 280 Onagraceae taxa and 15 Lythraceae taxa. 
        Estimated posterior probabilities close to 1.0 are shown in green. All genera described in
-       \citet{wagner2007revised} are monophyletic with posterior probabilities of $> 0.95$
+       \citet{wagner2007revised} were found to be monophyletic with posterior probabilities of $> 0.95$
        except for sister genera \textit{Neoholmgrenia} and \textit{Camissoniopsis} (posterior = 0.31).
     }
     \label{posteriors}
