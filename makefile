@@ -6,6 +6,9 @@ all:
 	pdflatex $(PROJECT).tex
 	pdflatex $(PROJECT).tex
 
+rtf:
+	latex2rtf $(PROJECT).tex
+
 clean-all:
 	rm -f *.dvi *.log *.bak *.aux *.bbl *.blg *.idx *.ps *.eps *.pdf *.toc *.out *~
 
