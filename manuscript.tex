@@ -67,17 +67,18 @@ Clusters that were not phylogenetically informative ($< 4$ taxa) were discarded,
 and each cluster was aligned using MUSCLE \citep{edgar2004muscle}. 
 The alignments were concatenated by species, and any species that was not present in at least
 two clusters was removed from the supermatrix.
-Code written to assemble the supermatrix is availabe as the Python module 
-Supermatrix Constructor (SUMAC) \citep[\url{https://github.com/wf8/sumac}]{sumac}.
+Code written to assemble the supermatrix is available as the Python module 
+SUMAC \citep[\url{https://github.com/wf8/sumac}]{sumac}, and can be used to assemble
+supermatrices for other taxonomic groups recognized in GenBank.
 
 
 
 \paragraph{Phylogenetic analyses} 
 Maximum likelihood analyses were performed with RAxML-HPC \citep{raxml} on the CIPRES Scientific Gateway \citep{cipres} 
 using the rapid bootstrap heuristic and the GTRCAT nucleotide substitution model.
-I used the ML tree to select 15 species phylogenetically widely distributed in Lythraceae to act as outgroup; 
-all other members of Lythraceae were subsequently removed from the supermatrix before estimating divergence times.
-Bayesian estimates of divergence times were inferred using BEAST \citep{beast, beast2} on CIPRES and calibrated with five fossils 
+I used the ML tree to select 15 taxa phylogenetically widely distributed in Lythraceae to act as outgroup for the divergence time analysis; 
+all other members of Lythraceae were subsequently removed from the supermatrix.
+Bayesian estimates of divergence times were inferred using BEAST v1.8 \citep{beast, beast2} on CIPRES and calibrated with five fossils 
 identified with morphological synapomorphies (Table \ref{fossils}).
 The \textit{Ludwigia} fossil pollen was dated broadly to the Paleocene \citep{grimsson}, so I set the prior to a normal distribution with a wide 
 standard deviation to cover the entire time period.
@@ -86,13 +87,14 @@ The BEAST analysis utilized the GTR+$\Gamma$ nucleotide substitution model with 
 and a Yule process tree prior.
 The Markov Chain Monte Carlo (MCMC) was run for 100 million generations, sampling every 10 thousand generations.
 Tracer v1.6 \citep{tracer} was used to assess the MCMC output for parameter convergence and ensure that the effective sample size for all parameters was above 200.
-The first 1000 trees were discarded as burn-in, and the remaining 9000 trees were summarized as a maximum clade credibility tree with mean divergence times. 
+The first 1000 trees were discarded as burn-in, and the remaining 9000 trees were summarized as a maximum clade credibility (MCC) tree with mean divergence times. 
 
 \begin{table*}
    \begin{adjustbox}{max width=\textwidth}
       \begin{tabular}{lllllll}
          \hline
-         Group & Age (Mya) & Prior Distribution & Mean & SD & Offset & Reference \\ \hline
+         Group & Age (Mya) & Prior Distribution & Mean & SD & Offset & Reference \\ 
+	 \hline
          \textit{Circaea} (Onagraceae) & 12 & lognormal & 0.0 & 2.0 & 12 & \citep{grimsson} \\
          \textit{Epilobium} (Onagraceae) & 12 & lognormal & 0.0 & 2.0 & 12 & \citep{grimsson} \\
          S. Pacific \textit{Fuschia} (Onagraceae) & 23 & lognormal & 0.0 & 1.0 & 23 & \citep{lee2013fossil} \\
@@ -101,7 +103,7 @@ The first 1000 trees were discarded as burn-in, and the remaining 9000 trees wer
          \hline
       \end{tabular}
    \end{adjustbox}
-   \caption{Fossil priors used in BEAST analyses.}
+   \caption{Fossils used as priors in the Bayesian divergence time analysis.}
    \label{fossils}
 \end{table*}
 
@@ -109,9 +111,10 @@ The first 1000 trees were discarded as burn-in, and the remaining 9000 trees wer
 I scored six characters, including
 chromosome number, floral merosity, petal color, and self-compatibility/incompatibility. 
 Character data was assembled from the comprehensive \citet{wagner2007revised} Onagraceae monograph.
-Ancestral character state reconstructions of petal number and petal color were performed using Mesquite v2.75 \citep{mesquite}.
+Ancestral character state reconstructions of petal number and petal color were performed using Mesquite v2.75 \citep{mesquite}
+over the Bayesian MCC tree.
 Characters were treated as unordered categorical data, and optimized using maximum likelihood
-under the Markov k-state 1 parameter (Mk1) model \citep{lewis2001likelihood}.
+with the Markov k-state 1 parameter (Mk1) model \citep{lewis2001likelihood}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -126,6 +129,35 @@ blah blah
 
 \paragraph{Divergence time estimates}
 Here is a table with the mean divergence time estimates including \%95 confidence intervals....
+\begin{table*}
+   \begin{adjustbox}{max width=\textwidth}
+      \begin{tabular}{lllllll}
+         \hline
+         Clade & Mean Age (Mya) & \%95 HPD Min & \%95 HPD Max \\ 
+	 \hline
+         Onagraceae / Lythraceae & 109 & 88 & 131 \\
+         \textit{Ludwigia} & 97 & 76 & 118 \\
+	 \textit{Hauya} & 49 & 35 & 64 \\
+	 \textit{Circaea} / \textit{Fuchshia} & 37 & 28 & 47 \\
+	 \textit{Lopezia} & 71 & 55 & 68 \\
+	 \textit{Gongylocarpus} & 60 & 45 & 77 \\
+	 \textit{Epilobium} & 49 & 38 & 60 \\
+	 \textit{Chamerion} & 47 & 36 & 57 \\
+	 \textit{Xylonagra} & 43 & 33 & 52 \\
+	 \textit{Clarkia} & 40 & 32 & 48 \\
+         \textit{Terapteron} & 19 & 10 & 29 \\
+	 \textit{Camissoniopsis} / \textit{Neoholmgrenia} & 14 & 5 & 23 \\
+	 \textit{Eremothera} / \textit{Camissonia} & 24 & 16 & 33 \\
+	 \textit{Taraxia} & 30 & 22 & 38 \\
+	 \textit{Chylismiella} / \textit{Gayophytum} & 20 & 10 & 30 \\
+	 \textit{Eulobus} & 26 & 19 & 34 \\
+	 \textit{Chylismia} / \textit{Oenothera} & 25 & 18 & 31 \\
+         \hline
+      \end{tabular}
+   \end{adjustbox}
+   \caption{Bayesian divergence time estimates of major clades.}
+   \label{times}
+\end{table*}
 
 \paragraph{Character evolution}
 blah blah
@@ -136,7 +168,12 @@ blah blah
         % have to trim bottom off image
         \includegraphics[width=1.6\linewidth, trim=0 10 0 0, clip=true]{colored_posterior}
     }
-    \caption{Phylogeny blah blah blah}
+    \caption{
+       Bayesian maximum clade credibility phylogeny of 280 Onagraceae taxa and 15 Lythraceae taxa. 
+       Estimated posterior probabilities close to 1.0 are shown in green. All genera described in
+       \citet{wagner2007revised} are monophyletic with posterior probabilities of $> 0.95$
+       except for sister genera \textit{Neoholmgrenia} and \textit{Camissoniopsis} (posterior = 0.31).
+    }
     \label{posteriors}
 \end{figure*}
 
@@ -145,7 +182,12 @@ blah blah
     \makebox[\linewidth]{
         \includegraphics[width=1.6\linewidth, trim=0 10 0 0, clip=true]{time_colored_genera}
     }
-    \caption{Sequence diagram}
+    \caption{
+       Bayesian chronogram of 280 Onagraceae taxa and 15 Lythraceae taxa.
+       Approximate positions of fossil calibration points are shown as black circles.
+       All genera described in \citet{wagner2007revised} are colored, and their
+       divergence time estimates and \%95 HPD intervals can be seen in Table \ref{times}.
+}
     \label{genera}
 \end{figure*}
 

@@ -39,7 +39,7 @@
 %Type = Misc
 \bibitem[{Freyman(2014)}]{sumac}
 \bibinfo{author}{Freyman, W.A.}, \bibinfo{year}{2014}.
-\newblock \bibinfo{title}{{S}upermatrix {C}onstructor ({SUMAC})}.
+\newblock \bibinfo{title}{{SUMAC}: {S}upermatrix {C}onstructor}.
 \newblock \bibinfo{howpublished}{\url{https://github.com/wf8/sumac}}.
 %Type = Article
 \bibitem[{Graham(2013)}]{graham}

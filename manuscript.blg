@@ -7,7 +7,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty journal in wagner2007revised
 You've used 15 entries,
             2990 wiz_defined-function locations,
-            828 strings with 8672 characters,
+            828 strings with 8671 characters,
 and the built_in function-call counts, 9296 in all, are:
 = -- 709
 > -- 334
