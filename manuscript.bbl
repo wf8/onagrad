@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{15}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -25,7 +25,7 @@
 \bibitem[{Drummond and Rambaut(2007)}]{beast}
 \bibinfo{author}{Drummond, A.J.}, \bibinfo{author}{Rambaut, A.},
   \bibinfo{year}{2007}.
-\newblock \bibinfo{title}{Beast: Bayesian evolutionary analysis by sampling
+\newblock \bibinfo{title}{{BEAST}: {B}ayesian evolutionary analysis by sampling
   trees}.
 \newblock \bibinfo{journal}{BMC evolutionary biology} \bibinfo{volume}{7},
   \bibinfo{pages}{214}.
@@ -44,16 +44,16 @@
 %Type = Article
 \bibitem[{Graham(2013)}]{graham}
 \bibinfo{author}{Graham, S.A.}, \bibinfo{year}{2013}.
-\newblock \bibinfo{title}{Fossil records in the lythraceae}.
+\newblock \bibinfo{title}{Fossil records in the {L}ythraceae}.
 \newblock \bibinfo{journal}{The Botanical Review} \bibinfo{volume}{79},
   \bibinfo{pages}{48--145}.
 %Type = Article
 \bibitem[{Gr{\'\i}msson et~al.(2012)Gr{\'\i}msson, Zetter and Leng}]{grimsson}
 \bibinfo{author}{Gr{\'\i}msson, F.}, \bibinfo{author}{Zetter, R.},
   \bibinfo{author}{Leng, Q.}, \bibinfo{year}{2012}.
-\newblock \bibinfo{title}{Diverse fossil onagraceae pollen from a miocene
-  palynoflora of north-east china: early steps in resolving the phytogeographic
-  history of the family}.
+\newblock \bibinfo{title}{Diverse fossil {O}nagraceae pollen from a {M}iocene
+  palynoflora of north-east {C}hina: early steps in resolving the
+  phytogeographic history of the family}.
 \newblock \bibinfo{journal}{Plant Systematics and Evolution}
   \bibinfo{volume}{298}, \bibinfo{pages}{671--687}.
 %Type = Article
@@ -62,10 +62,25 @@
 \bibinfo{author}{Lee, D.E.}, \bibinfo{author}{Conran, J.G.},
   \bibinfo{author}{Bannister, J.M.}, \bibinfo{author}{Kaulfuss, U.},
   \bibinfo{author}{Mildenhall, D.C.}, \bibinfo{year}{2013}.
-\newblock \bibinfo{title}{A fossil fuchsia (onagraceae) flower and an anther
-  mass with in situ pollen from the early miocene of new zealand}.
+\newblock \bibinfo{title}{A fossil \textit{{F}uchsia} ({O}nagraceae) flower and
+  an anther mass with in situ pollen from the early {M}iocene of {N}ew
+  {Z}ealand}.
 \newblock \bibinfo{journal}{American journal of botany} \bibinfo{volume}{100},
   \bibinfo{pages}{2052--2065}.
+%Type = Article
+\bibitem[{Lewis(2001)}]{lewis2001likelihood}
+\bibinfo{author}{Lewis, P.O.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{A likelihood approach to estimating phylogeny from
+  discrete morphological character data}.
+\newblock \bibinfo{journal}{Systematic biology} \bibinfo{volume}{50},
+  \bibinfo{pages}{913--925}.
+%Type = Misc
+\bibitem[{Maddison and Maddison(2011)}]{mesquite}
+\bibinfo{author}{Maddison, W.P.}, \bibinfo{author}{Maddison, D.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Mesquite: a modular system for evolutionary analysis.
+  {V}ersion 2.75}.
+\newblock \bibinfo{howpublished}{\url{http://mesquiteproject.org}}.
 %Type = Inproceedings
 \bibitem[{Miller et~al.(2010)Miller, Pfeiffer and Schwartz}]{cipres}
 \bibinfo{author}{Miller, M.A.}, \bibinfo{author}{Pfeiffer, W.},
@@ -95,11 +110,16 @@
 \newblock \bibinfo{journal}{Bioinformatics} \bibinfo{volume}{25},
   \bibinfo{pages}{1370--1376}.
 %Type = Article
+\bibitem[{Wagner et~al.(2007)Wagner, Hoch and Raven}]{wagner2007revised}
+\bibinfo{author}{Wagner, W.L.}, \bibinfo{author}{Hoch, P.C.},
+  \bibinfo{author}{Raven, P.H.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Revised classification of the {O}nagraceae} .
+%Type = Article
 \bibitem[{Zhi-Chen et~al.(2004)Zhi-Chen, Wei-Ming and Fei}]{zhi}
 \bibinfo{author}{Zhi-Chen, S.}, \bibinfo{author}{Wei-Ming, W.},
   \bibinfo{author}{Fei, H.}, \bibinfo{year}{2004}.
 \newblock \bibinfo{title}{Fossil pollen records of extant angiosperms in
-  china}.
+  {C}hina}.
 \newblock \bibinfo{journal}{The Botanical Review} \bibinfo{volume}{70},
   \bibinfo{pages}{425--458}.
 

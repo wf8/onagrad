@@ -88,10 +88,6 @@ The Markov Chain Monte Carlo (MCMC) was run for 100 million generations, samplin
 Tracer v1.6 \citep{tracer} was used to assess the MCMC output for parameter convergence and ensure that the effective sample size for all parameters was above 200.
 The first 1000 trees were discarded as burn-in, and the remaining 9000 trees were summarized as a maximum clade credibility tree with mean divergence times. 
 
-\paragraph{Character evolution}
-blah blah
-
-
 \begin{table*}
    \begin{adjustbox}{max width=\textwidth}
       \begin{tabular}{lllllll}
@@ -108,6 +104,15 @@ blah blah
    \caption{Fossil priors used in BEAST analyses.}
    \label{fossils}
 \end{table*}
+
+\paragraph{Character state reconstruction}
+I scored six characters, including
+chromosome number, floral merosity, petal color, and self-compatibility/incompatibility. 
+Character data was assembled from the comprehensive \citet{wagner2007revised} Onagraceae monograph.
+Ancestral character state reconstructions of petal number and petal color were performed using Mesquite v2.75 \citep{mesquite}.
+Characters were treated as unordered categorical data, and optimized using maximum likelihood
+under the Markov k-state 1 parameter (Mk1) model \citep{lewis2001likelihood}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% results
