@@ -90,6 +90,7 @@ Tracer v1.6 \citep{tracer} was used to assess the MCMC output for parameter conv
 The first 1000 trees were discarded as burn-in, and the remaining 9000 trees were summarized as a maximum clade credibility (MCC) tree with mean divergence times. 
 
 \begin{table*}
+   \center
    \begin{adjustbox}{max width=\textwidth}
       \begin{tabular}{lllllll}
          \hline
@@ -131,6 +132,7 @@ As used in the maximum likelihood analyses (before pruning the number of outgrou
 the supermatrix contained 521 taxa, was 31862 nucleotides long, and contained 93.0\% missing data.
 
 \begin{table*}
+   \center
    \begin{adjustbox}{max width=\textwidth}
       \begin{tabular}{lllllll}
          \hline
@@ -163,6 +165,7 @@ Onagraceae was found to diverge from Lythraceae at 109 Mya (Figure \ref{genera})
 Divergence time estimates of other major clades and 95\% highest posterior density (HPD) intervals can be seen in Table \ref{times}.
 
 \begin{table*}
+   \center
    \begin{adjustbox}{max width=\textwidth}
       \begin{tabular}{lllllll}
          \hline
@@ -194,6 +197,30 @@ Divergence time estimates of other major clades and 95\% highest posterior densi
 
 \paragraph{Character evolution}
 blah blah
+
+\begin{table*}
+   \center
+   \begin{adjustbox}{max width=\textwidth}
+      \begin{tabular}{l|llllll}
+         \hline
+	 & \multicolumn{4}{c}{Number of Petals} \\
+         Color & 2 & 4 & 5 & 6 \\ 
+	 \hline
+         pink & -0.005 & .011 & ns & ns \\
+	 yellow & -0.008 & .021 & ns & ns \\
+	 white & 0.008 & 0.013 & -0.006 & -0.006 \\
+	 green & ns & -0.011 & ns & ns \\
+	 red & ns & ns & ns & ns \\
+         \hline
+      \end{tabular}
+   \end{adjustbox}
+   \caption{Test statistics for the correlation between flower color and number of petals. 
+	    $d$ values are shown
+            for the pairwise comparison of states with $p< 0.05$. ns indicates no significant
+	    association. The overall $D$ value was 0.263 ($p=0.00$).
+	    }
+   \label{correlations}
+\end{table*}
 
 \begin{figure*}[p]
     \vspace*{-2cm}

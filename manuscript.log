@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  27 APR 2014 21:40
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 MAY 2014 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -443,19 +443,19 @@ LaTeX Info: Redefining \nameref on input line 26.
 
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (5.82484pt too wide) in paragraph at lines 111--118
+Overfull \hbox (5.82484pt too wide) in paragraph at lines 112--119
 \OT1/cmr/m/n/10 num-ber, flo-ral meros-ity, petal color, and self-compatibility
 /incompatibility. Char-
  []
 
 [2]
-Overfull \hbox (3.9432pt too wide) in paragraph at lines 128--132
+Overfull \hbox (3.9432pt too wide) in paragraph at lines 129--133
  []\OT1/cmr/m/it/10 Supermatrix as-sem-bly.[] \OT1/cmr/m/n/10 SUMAC eval-u-ated
  5571 On-a-graceae and 2832 Lythraceae
  []
 
 
-Overfull \hbox (4.07574pt too wide) in paragraph at lines 158--164
+Overfull \hbox (4.07574pt too wide) in paragraph at lines 160--166
  []\OT1/cmr/m/it/10 Phylogeny and di-ver-gence time es-ti-mates.[] \OT1/cmr/m/n
 /10 The topolo-gies of the ML and Bayesian
  []
@@ -464,7 +464,7 @@ Overfull \hbox (4.07574pt too wide) in paragraph at lines 158--164
 File: ./figures/colored_posterior.pdf Graphic file (type pdf)
 
 <use ./figures/colored_posterior.pdf>
-Package pdftex.def Info: ./figures/colored_posterior.pdf used on input line 203
+Package pdftex.def Info: ./figures/colored_posterior.pdf used on input line 230
 .
 (pdftex.def)             Requested size: 552.0021pt x 446.44212pt.
 
@@ -473,29 +473,29 @@ File: ./figures/time_colored_genera.pdf Graphic file (type pdf)
 
 <use ./figures/time_colored_genera.pdf>
 Package pdftex.def Info: ./figures/time_colored_genera.pdf used on input line 2
-17.
+44.
 (pdftex.def)             Requested size: 552.0021pt x 445.98279pt.
  [4] [5 <./figures/colored_posterior.pdf>] [6 <./figures/time_colored_genera.pd
 f>] (./manuscript.bbl [7])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
  [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
 
 (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 912E5B34EC519661EB80F8E2F4DAF8E9;176.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
  ) 
 Here is how much of TeX's memory you used:
- 7674 strings out of 493488
- 112329 string characters out of 3141326
- 211233 words of memory out of 3000000
- 10831 multiletter control sequences out of 15000+200000
+ 7676 strings out of 493488
+ 112350 string characters out of 3141326
+ 212491 words of memory out of 3000000
+ 10832 multiletter control sequences out of 15000+200000
  9346 words of font info for 34 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,9n,37p,508b,462s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,9n,37p,508b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
@@ -512,10 +512,10 @@ ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
 12/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on manuscript.pdf (8 pages, 314484 bytes).
+Output written on manuscript.pdf (8 pages, 317043 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 693 compressed objects within 7 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 746 PDF objects out of 1000 (max. 8388607)
+ 695 compressed objects within 7 object streams
+ 43 named destinations out of 1000 (max. 500000)
  55 words of extra memory for PDF output out of 10000 (max. 10000000)
 
