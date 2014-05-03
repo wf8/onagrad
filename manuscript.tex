@@ -5,6 +5,7 @@
 \usepackage{mathtools}
 \usepackage{adjustbox}
 \usepackage{natbib}
+\usepackage{booktabs}
 \modulolinenumbers[5]
 
 \graphicspath{ {./figures/} }
@@ -50,7 +51,12 @@ blah blah
 
 \section{Introduction}
 
-blah blah
+Questions: are the taxonomic groups described in \citet{wagner2007revised} monophyletic?
+When did the major clades diverge?
+What are the patterns of petal color and petal number evolution, and
+are their evolution correlated?
+What is the pattern of chromosome number evolution?
+
 
 \section{Methods}
 
@@ -93,15 +99,15 @@ The first 1000 trees were discarded as burn-in, and the remaining 9000 trees wer
    \center
    \begin{adjustbox}{max width=\textwidth}
       \begin{tabular}{lllllll}
-         \hline
+         \toprule
          Group & Age (Mya) & Prior Distribution & Mean & SD & Offset & Reference \\ 
-	 \hline
+	 \midrule
          \textit{Circaea} (Onagraceae) & 12 & lognormal & 0.0 & 2.0 & 12 & \citep{grimsson} \\
          \textit{Epilobium} (Onagraceae) & 12 & lognormal & 0.0 & 2.0 & 12 & \citep{grimsson} \\
          S. Pacific \textit{Fuschia} (Onagraceae) & 23 & lognormal & 0.0 & 1.0 & 23 & \citep{lee2013fossil} \\
          \textit{Ludwigia} (Onagraceae) & Paleocene & normal & 60.0 & 3.0 & - & \citep{zhi} \\
          Lythraceae & 82 & lognormal & 0.0 & 2.0 & 82 & \citep{graham} \\
-         \hline
+         \bottomrule
       \end{tabular}
    \end{adjustbox}
    \caption{Fossils used as priors in the Bayesian divergence time analysis.}
@@ -135,9 +141,9 @@ the supermatrix contained 521 taxa, was 31862 nucleotides long, and contained 93
    \center
    \begin{adjustbox}{max width=\textwidth}
       \begin{tabular}{lllllll}
-         \hline
+         \toprule
          DNA Region & \# of Taxa & Aligned Length & Missing data (\%) & Taxon Coverage Density \\ 
-	 \hline
+	 \midrule
          ITS & 453 & 1746 & 13.2 & 0.87 \\
          trnL & 234 & 1429 & 55.2 & 0.45 \\
          rpl16 & 91 & 1414 & 82.6 & 0.17 \\
@@ -149,7 +155,7 @@ the supermatrix contained 521 taxa, was 31862 nucleotides long, and contained 93
          ndhF & 37 & 2063 & 92.9 & 0.07 \\
          pgiC & 26 & 14709 & 95.0 & 0.05 \\
          R5 & 18 & 3129 & 96.6 & 0.03 \\
-         \hline
+         \bottomrule
       \end{tabular}
    \end{adjustbox}
    \caption{Clusters of homologous sequences used to assemble the supermatrix.}
@@ -168,9 +174,9 @@ Divergence time estimates of other major clades and 95\% highest posterior densi
    \center
    \begin{adjustbox}{max width=\textwidth}
       \begin{tabular}{lllllll}
-         \hline
+         \toprule
          Clade & Mean Age (Mya) & 95\% HPD Min & 95\% HPD Max \\ 
-	 \hline
+	 \midrule
          Onagraceae / Lythraceae & 109 & 88 & 131 \\
          \textit{Ludwigia} & 97 & 76 & 118 \\
 	 \textit{Hauya} & 49 & 35 & 64 \\
@@ -188,7 +194,7 @@ Divergence time estimates of other major clades and 95\% highest posterior densi
 	 \textit{Chylismiella} / \textit{Gayophytum} & 20 & 10 & 30 \\
 	 \textit{Eulobus} & 26 & 19 & 34 \\
 	 \textit{Chylismia} / \textit{Oenothera} & 25 & 18 & 31 \\
-         \hline
+         \bottomrule
       \end{tabular}
    \end{adjustbox}
    \caption{Bayesian divergence time estimates of major clades.}
@@ -201,22 +207,24 @@ blah blah
 \begin{table*}
    \center
    \begin{adjustbox}{max width=\textwidth}
-      \begin{tabular}{l|llllll}
-         \hline
+      \setlength{\tabcolsep}{20pt}
+      \begin{tabular}{lllllll}
+         \toprule
 	 & \multicolumn{4}{c}{Number of Petals} \\
-         Color & 2 & 4 & 5 & 6 \\ 
-	 \hline
-         pink & -0.005 & .011 & ns & ns \\
-	 yellow & -0.008 & .021 & ns & ns \\
-	 white & 0.008 & 0.013 & -0.006 & -0.006 \\
-	 green & ns & -0.011 & ns & ns \\
-	 red & ns & ns & ns & ns \\
-         \hline
+         & 2 & 4 & 5 & 6 \\ 
+	 \cmidrule{2-5}
+	 Petal Color \\
+         \hspace{3 mm} Pink & -0.005 & .011 & $ns$ & $ns$ \\
+	 \hspace{3 mm} Yellow & -0.008 & .021 & $ns$ & $ns$ \\
+	 \hspace{3 mm} White & 0.008 & 0.013 & -0.006 & -0.006 \\
+	 \hspace{3 mm} Green & $ns$ & -0.011 & $ns$ & $ns$ \\
+	 \hspace{3 mm} Red & $ns$ & $ns$ & $ns$ & $ns$ \\
+         \bottomrule
       \end{tabular}
    \end{adjustbox}
    \caption{Test statistics for the correlation between flower color and number of petals. 
 	    $d$ values are shown
-            for the pairwise comparison of states with $p< 0.05$. ns indicates no significant
+            for the pairwise comparison of states with $p< 0.01$. $ns$ indicates no significant
 	    association. The overall $D$ value was 0.263 ($p=0.00$).
 	    }
    \label{correlations}

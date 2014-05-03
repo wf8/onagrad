@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 MAY 2014 18:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  2 MAY 2014 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -374,36 +374,56 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen143
 \@vwid@roff=\dimen144
 ))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen145
+\lightrulewidth=\dimen146
+\cmidrulewidth=\dimen147
+\belowrulesep=\dimen148
+\belowbottomsep=\dimen149
+\aboverulesep=\dimen150
+\abovetopsep=\dimen151
+\cmidrulesep=\dimen152
+\cmidrulekern=\dimen153
+\defaultaddspace=\dimen154
+\@cmidla=\count131
+\@cmidlb=\count132
+\@aboverulesep=\dimen155
+\@belowrulesep=\dimen156
+\@thisruleclass=\count133
+\@lastruleclass=\count134
+\@thisrulewidth=\dimen157
+)
 (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
-\scratchdimen=\dimen145
+\scratchcounter=\count135
+\scratchdimen=\dimen158
 \scratchbox=\box35
-\nofMPsegments=\count132
-\nofMParguments=\count133
+\nofMPsegments=\count136
+\nofMParguments=\count137
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count134
-\MPscratchDim=\dimen146
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
+\MPscratchCnt=\count138
+\MPscratchDim=\dimen159
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
 \everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -421,7 +441,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 27.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -429,11 +449,11 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count137
+\c@section@level=\count141
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (./manuscript.out) (./manuscript.out)
 \@outlinefile=\write4
@@ -443,59 +463,59 @@ LaTeX Info: Redefining \nameref on input line 26.
 
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (5.82484pt too wide) in paragraph at lines 112--119
+Overfull \hbox (5.82484pt too wide) in paragraph at lines 118--125
 \OT1/cmr/m/n/10 num-ber, flo-ral meros-ity, petal color, and self-compatibility
 /incompatibility. Char-
  []
 
 [2]
-Overfull \hbox (3.9432pt too wide) in paragraph at lines 129--133
+Overfull \hbox (3.9432pt too wide) in paragraph at lines 135--139
  []\OT1/cmr/m/it/10 Supermatrix as-sem-bly.[] \OT1/cmr/m/n/10 SUMAC eval-u-ated
  5571 On-a-graceae and 2832 Lythraceae
  []
 
 
-Overfull \hbox (4.07574pt too wide) in paragraph at lines 160--166
+Overfull \hbox (4.07574pt too wide) in paragraph at lines 166--172
  []\OT1/cmr/m/it/10 Phylogeny and di-ver-gence time es-ti-mates.[] \OT1/cmr/m/n
 /10 The topolo-gies of the ML and Bayesian
  []
 
-[3] <./figures/colored_posterior.pdf, id=120, 1212.53pt x 990.70125pt>
+<./figures/colored_posterior.pdf, id=110, 1212.53pt x 990.70125pt>
 File: ./figures/colored_posterior.pdf Graphic file (type pdf)
 
 <use ./figures/colored_posterior.pdf>
-Package pdftex.def Info: ./figures/colored_posterior.pdf used on input line 230
+Package pdftex.def Info: ./figures/colored_posterior.pdf used on input line 238
 .
 (pdftex.def)             Requested size: 552.0021pt x 446.44212pt.
 
-<./figures/time_colored_genera.pdf, id=126, 1065.9825pt x 871.255pt>
+<./figures/time_colored_genera.pdf, id=116, 1065.9825pt x 871.255pt>
 File: ./figures/time_colored_genera.pdf Graphic file (type pdf)
 
 <use ./figures/time_colored_genera.pdf>
 Package pdftex.def Info: ./figures/time_colored_genera.pdf used on input line 2
-44.
+52.
 (pdftex.def)             Requested size: 552.0021pt x 445.98279pt.
- [4] [5 <./figures/colored_posterior.pdf>] [6 <./figures/time_colored_genera.pd
-f>] (./manuscript.bbl [7])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
+ [3] [4] [5 <./figures/colored_posterior.pdf>] [6 <./figures/time_colored_gener
+a.pdf>] (./manuscript.bbl [7])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
  [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
 
 (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 912E5B34EC519661EB80F8E2F4DAF8E9;176.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 7676 strings out of 493488
- 112350 string characters out of 3141326
- 212491 words of memory out of 3000000
- 10832 multiletter control sequences out of 15000+200000
+ 7733 strings out of 493488
+ 113123 string characters out of 3141326
+ 222232 words of memory out of 3000000
+ 10885 multiletter control sequences out of 15000+200000
  9346 words of font info for 34 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,9n,37p,508b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,9n,37p,508b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
@@ -512,10 +532,10 @@ ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
 12/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on manuscript.pdf (8 pages, 317043 bytes).
+Output written on manuscript.pdf (8 pages, 318613 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 695 compressed objects within 7 object streams
+ 748 PDF objects out of 1000 (max. 8388607)
+ 697 compressed objects within 7 object streams
  43 named destinations out of 1000 (max. 500000)
  55 words of extra memory for PDF output out of 10000 (max. 10000000)
 
