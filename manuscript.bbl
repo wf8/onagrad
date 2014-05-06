@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{21}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -17,6 +17,13 @@
 \newblock \bibinfo{title}{Likelihood of a model and information criteria}.
 \newblock \bibinfo{journal}{Journal of econometrics} \bibinfo{volume}{16},
   \bibinfo{pages}{3--14}.
+%Type = Article
+\bibitem[{Bollback(2006)}]{bollback2006simmap}
+\bibinfo{author}{Bollback, J.P.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Simmap: stochastic character mapping of discrete
+  traits on phylogenies}.
+\newblock \bibinfo{journal}{BMC Bioinformatics} \bibinfo{volume}{7},
+  \bibinfo{pages}{88}.
 %Type = Article
 \bibitem[{Camacho et~al.(2009)Camacho, Coulouris, Avagyan, Ma, Papadopoulos,
   Bealer and Madden}]{blast}
@@ -81,6 +88,14 @@
   phytogeographic history of the family}.
 \newblock \bibinfo{journal}{Plant Systematics and Evolution}
   \bibinfo{volume}{298}, \bibinfo{pages}{671--687}.
+%Type = Article
+\bibitem[{Huelsenbeck et~al.(2003)Huelsenbeck, Nielsen and
+  Bollback}]{Huelsenbeck2003}
+\bibinfo{author}{Huelsenbeck, J.P.}, \bibinfo{author}{Nielsen, R.},
+  \bibinfo{author}{Bollback, J.P.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{{Stochastic Mapping of Morphological Characters}}.
+\newblock \bibinfo{journal}{Systematic Biology} \bibinfo{volume}{52},
+  \bibinfo{pages}{131--158}.
 %Type = Article
 \bibitem[{Lee et~al.(2013)Lee, Conran, Bannister, Kaulfuss and
   Mildenhall}]{lee2013fossil}

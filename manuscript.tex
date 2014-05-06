@@ -43,7 +43,7 @@ and divergence time estimates were calibrated using 5 fossils.
 Chromosome number evolution was estimated using probabilistic models,
 and ancestral states of petal color and petal number were reconstructed using maximum likelihood.
 Correlated evolution between petal color and petal number was tested using
-stochastic character mapping.
+Bayesian stochastic character mapping.
 The monophyly of all major clades in Onagraceae was supported,
 and Onagraceae was estimated to have diverged from Lythraceae 109 Mya. 
 The base chromosome number of Onagraceae was inferred to be $x=5$.
@@ -136,14 +136,26 @@ The first 1000 trees were discarded as burn-in, and the remaining 9000 trees wer
 I scored six characters, including
 chromosome number, floral merosity, petal color, and self-compatibility/incompatibility. 
 Character data was assembled from the comprehensive \citet{wagner2007revised} Onagraceae monograph.
-Ancestral character state reconstructions of petal number and petal color were performed using Mesquite v2.75 \citep{mesquite}
-over the Bayesian MCC tree.
-Characters were treated as unordered categorical data, and optimized using maximum likelihood
-with the Markov k-state 1 parameter (Mk1) model \citep{lewis2001likelihood}.
 Ancestral chromosome numbers were inferred using maximum likelihood and Bayesian methods 
 as implemented in ChromEvol 2.0 \citep{chromevol}.
 Eight different models of chromosome evolution were fit to the Bayesian MCC phylogeny using ChromEvol,
 and the best fit model was selected using Akaike's information criterion \citep{aic}.
+Ancestral character state reconstructions of petal number and petal color were performed using Mesquite v2.75 \citep{mesquite}
+over the Bayesian MCC tree.
+Characters were treated as unordered categorical data, and optimized using maximum likelihood
+with the Markov k-state 1 parameter (Mk1) model \citep{lewis2001likelihood}.
+Additionally, Bayesian stochastic character mapping \citep{Huelsenbeck2003} was used to test whether
+petal color and petal number covaried over the phylogeny. 
+Models of petal color and petal number evolution
+were configured in the program SIMMAP v1.5 \citep{bollback2006simmap}
+using unordered states, gamma rate priors, and equal state bias priors.
+The correlation analysis used SIMMAP's default
+predictive sampling configuration
+and calculated the following correlation statistics: 
+$D$ the overall association between
+the two characters, and $d_{ij}$ the association between the
+individual states of each character \citep{Huelsenbeck2003}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% results
@@ -243,7 +255,7 @@ blah blah
          \bottomrule
       \end{tabular}
    \end{adjustbox}
-   \caption{Test statistics for the correlation between flower color and number of petals. 
+   \caption{Test statistics for the correlation between flower color evolution and petal number evolution. 
 	    $d$ values are shown
             for the pairwise comparison of states with $p< 0.01$. $ns$ indicates no significant
 	    association. The overall $D$ value was 0.263 ($p=0.00$).
