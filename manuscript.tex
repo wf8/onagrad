@@ -28,7 +28,7 @@
 
 \begin{frontmatter}
 
-\title{Fossil-calibrated phylogeny of Onagraceae: patterns of floral and chromosome evolution}
+\title{Fossil-calibrated supermatrix phylogeny of Onagraceae: patterns of floral and chromosome evolution}
 
 \author[berk]{William A. Freyman\corref{cor1}}
 \ead{freyman@berkeley.edu}
@@ -62,8 +62,10 @@ What is the pattern of chromosome number evolution?
 
 \paragraph{Supermatrix assembly} 
 
-I downloaded all available DNA sequences from GenBank release 200 PLN division and
-performed an exhaustive all-by-all BLASTn \citep{blast} comparison for sequences in Onagraceae
+Lythraceae was selected to use as an outgroup since previous molecular phylogenetic analyses
+place it sister to Onagraceae \citep{conti1997, Sytsma2004}.
+I downloaded all DNA sequences from GenBank release 200 PLN division and
+performed an exhaustive all-by-all BLASTn \citep{blast} comparison of sequences in Onagraceae
 and Lythraceae.
 Using a BLASTn e-value of $1.0 \times 10^{-10}$ threshold and a sequence length
 percent similarity cutoff of 0.5,
@@ -73,9 +75,12 @@ Clusters that were not phylogenetically informative ($< 4$ taxa) were discarded,
 and each cluster was aligned using MUSCLE \citep{edgar2004muscle}. 
 The alignments were concatenated by species, and any species that was not present in at least
 two clusters was removed from the supermatrix.
-Code written to assemble the supermatrix is available as the Python module 
-SUMAC \citep[\url{https://github.com/wf8/sumac}]{sumac}, and can be used to assemble
-supermatrices for other taxonomic groups recognized in GenBank.
+The program written to data-mine GenBank and assemble the supermatrix 
+is available as the open source Python module 
+SUMAC \citep{sumac}.
+SUMAC can be used to assemble
+supermatrices for any taxonomic group recognized in GenBank, 
+and is optimized to run on multicore processors and clusters by utilizing multiple parallel processes.
 
 
 

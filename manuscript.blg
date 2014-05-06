@@ -4,46 +4,44 @@ The top-level auxiliary file: manuscript.aux
 The style file: model2-names.bst
 Database file #1: manuscriptbib.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty journal in wagner2007revised
-You've used 15 entries,
+You've used 17 entries,
             2990 wiz_defined-function locations,
-            828 strings with 8671 characters,
-and the built_in function-call counts, 9296 in all, are:
-= -- 709
-> -- 334
+            845 strings with 9235 characters,
+and the built_in function-call counts, 10868 in all, are:
+= -- 825
+> -- 418
 < -- 9
-+ -- 133
-- -- 114
-* -- 975
-:= -- 1369
-add.period$ -- 43
-call.type$ -- 15
-change.case$ -- 113
-chr.to.int$ -- 15
-cite$ -- 16
-duplicate$ -- 713
-empty$ -- 702
-format.name$ -- 155
-if$ -- 1717
++ -- 165
+- -- 144
+* -- 1163
+:= -- 1602
+add.period$ -- 50
+call.type$ -- 17
+change.case$ -- 133
+chr.to.int$ -- 17
+cite$ -- 17
+duplicate$ -- 823
+empty$ -- 802
+format.name$ -- 191
+if$ -- 2001
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 131
-newline$ -- 88
-num.names$ -- 60
-pop$ -- 263
+missing$ -- 155
+newline$ -- 99
+num.names$ -- 68
+pop$ -- 299
 preamble$ -- 1
-purify$ -- 98
+purify$ -- 116
 quote$ -- 0
-skip$ -- 208
+skip$ -- 233
 stack$ -- 0
-substring$ -- 411
-swap$ -- 483
+substring$ -- 468
+swap$ -- 574
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 135
-warning$ -- 1
-while$ -- 65
+type$ -- 153
+warning$ -- 0
+while$ -- 74
 width$ -- 0
-write$ -- 217
-(There was 1 warning)
+write$ -- 248

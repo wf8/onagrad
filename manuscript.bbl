@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{17}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -19,22 +19,33 @@
   \bibinfo{author}{Papadopoulos, J.}, \bibinfo{author}{Bealer, K.},
   \bibinfo{author}{Madden, T.L.}, \bibinfo{year}{2009}.
 \newblock \bibinfo{title}{{BLAST}+: architecture and applications}.
-\newblock \bibinfo{journal}{BMC bioinformatics} \bibinfo{volume}{10},
+\newblock \bibinfo{journal}{BMC Bioinformatics} \bibinfo{volume}{10},
   \bibinfo{pages}{421}.
+%Type = Article
+\bibitem[{Conti et~al.(1997)Conti, Litt, Wilson, Graham, Briggs, Johnson and
+  Sytsma}]{conti1997}
+\bibinfo{author}{Conti, E.}, \bibinfo{author}{Litt, A.},
+  \bibinfo{author}{Wilson, P.G.}, \bibinfo{author}{Graham, S.A.},
+  \bibinfo{author}{Briggs, B.G.}, \bibinfo{author}{Johnson, L.},
+  \bibinfo{author}{Sytsma, K.J.}, \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{Interfamilial relationships in {M}yrtales: molecular
+  phylogeny and patterns of morphological evolution}.
+\newblock \bibinfo{journal}{Systematic Botany} \bibinfo{volume}{22},
+  \bibinfo{pages}{629--647}.
 %Type = Article
 \bibitem[{Drummond and Rambaut(2007)}]{beast}
 \bibinfo{author}{Drummond, A.J.}, \bibinfo{author}{Rambaut, A.},
   \bibinfo{year}{2007}.
 \newblock \bibinfo{title}{{BEAST}: {B}ayesian evolutionary analysis by sampling
   trees}.
-\newblock \bibinfo{journal}{BMC evolutionary biology} \bibinfo{volume}{7},
+\newblock \bibinfo{journal}{BMC Evolutionary Biology} \bibinfo{volume}{7},
   \bibinfo{pages}{214}.
 %Type = Article
 \bibitem[{Edgar(2004)}]{edgar2004muscle}
 \bibinfo{author}{Edgar, R.C.}, \bibinfo{year}{2004}.
 \newblock \bibinfo{title}{{MUSCLE}: multiple sequence alignment with high
   accuracy and high throughput}.
-\newblock \bibinfo{journal}{Nucleic acids research} \bibinfo{volume}{32},
+\newblock \bibinfo{journal}{Nucleic Acids Research} \bibinfo{volume}{32},
   \bibinfo{pages}{1792--1797}.
 %Type = Misc
 \bibitem[{Freyman(2014)}]{sumac}
@@ -65,14 +76,14 @@
 \newblock \bibinfo{title}{A fossil \textit{{F}uchsia} ({O}nagraceae) flower and
   an anther mass with in situ pollen from the early {M}iocene of {N}ew
   {Z}ealand}.
-\newblock \bibinfo{journal}{American journal of botany} \bibinfo{volume}{100},
+\newblock \bibinfo{journal}{American Journal of Botany} \bibinfo{volume}{100},
   \bibinfo{pages}{2052--2065}.
 %Type = Article
 \bibitem[{Lewis(2001)}]{lewis2001likelihood}
 \bibinfo{author}{Lewis, P.O.}, \bibinfo{year}{2001}.
 \newblock \bibinfo{title}{A likelihood approach to estimating phylogeny from
   discrete morphological character data}.
-\newblock \bibinfo{journal}{Systematic biology} \bibinfo{volume}{50},
+\newblock \bibinfo{journal}{Systematic Biology} \bibinfo{volume}{50},
   \bibinfo{pages}{913--925}.
 %Type = Misc
 \bibitem[{Maddison and Maddison(2011)}]{mesquite}
@@ -101,7 +112,7 @@
 \bibinfo{author}{Stamatakis, A.}, \bibinfo{year}{2014}.
 \newblock \bibinfo{title}{{RA}x{ML} {V}ersion 8: A tool for phylogenetic
   analysis and post-analysis of large phylogenies}.
-\newblock \bibinfo{journal}{Bioinformatics} , \bibinfo{pages}{btu033}.
+\newblock \bibinfo{journal}{Bioinformatics} .
 %Type = Article
 \bibitem[{Suchard and Rambaut(2009)}]{beast2}
 \bibinfo{author}{Suchard, M.A.}, \bibinfo{author}{Rambaut, A.},
@@ -110,10 +121,20 @@
 \newblock \bibinfo{journal}{Bioinformatics} \bibinfo{volume}{25},
   \bibinfo{pages}{1370--1376}.
 %Type = Article
+\bibitem[{Sytsma et~al.(2004)Sytsma, Litt and Zjhra}]{Sytsma2004}
+\bibinfo{author}{Sytsma, K.}, \bibinfo{author}{Litt, A.},
+  \bibinfo{author}{Zjhra, M.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Clades, clocks, and continents: Historical and
+  biogeographical analysis of {M}yrtaceae, {V}ochysiaceae, and relatives in the
+  southern {H}emisphere source}.
+\newblock \bibinfo{journal}{International Journal of Plant Sciences}
+  \bibinfo{volume}{165}, \bibinfo{pages}{S85--S105}.
+%Type = Article
 \bibitem[{Wagner et~al.(2007)Wagner, Hoch and Raven}]{wagner2007revised}
 \bibinfo{author}{Wagner, W.L.}, \bibinfo{author}{Hoch, P.C.},
   \bibinfo{author}{Raven, P.H.}, \bibinfo{year}{2007}.
-\newblock \bibinfo{title}{Revised classification of the {O}nagraceae} .
+\newblock \bibinfo{title}{Revised classification of the {O}nagraceae}.
+\newblock \bibinfo{journal}{Systematic Botany Monographs} \bibinfo{volume}{83}.
 %Type = Article
 \bibitem[{Zhi-Chen et~al.(2004)Zhi-Chen, Wei-Ming and Fei}]{zhi}
 \bibinfo{author}{Zhi-Chen, S.}, \bibinfo{author}{Wei-Ming, W.},
