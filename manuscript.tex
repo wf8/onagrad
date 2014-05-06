@@ -1,12 +1,11 @@
 \documentclass[review]{elsarticle}
 
-\usepackage{lineno}
 \usepackage[hidelinks]{hyperref}
 \usepackage{mathtools}
 \usepackage{adjustbox}
 \usepackage{natbib}
 \usepackage{booktabs}
-\modulolinenumbers[5]
+\usepackage{lineno}
 
 \graphicspath{ {./figures/} }
 
@@ -37,7 +36,20 @@
 \address[berk]{Jepson Herbarium and Department of Integrative Biology, University of California, Berkeley}
 
 \begin{abstract}
-blah blah
+Onagraceae is a cosmopolitan plant family in the order Myrtales comprised of 22 genera and 657 species.
+I used a GenBank data-mining approach to construct an 11 gene supermatrix of 521 taxa in Onagraceae and Lythraceae.
+Maximum likelihood and Bayesian inference phylogenetic analyses were performed, 
+and divergence time estimates were calibrated using 5 fossils.
+Chromosome number evolution was estimated using probabilistic models,
+and ancestral states of petal color and petal number were reconstructed using maximum likelihood.
+Correlated evolution between petal color and petal number was tested using
+stochastic character mapping.
+The monophyly of all major clades in Onagraceae was supported,
+and Onagraceae was estimated to have diverged from Lythraceae 109 Mya. 
+The base chromosome number of Onagraceae was inferred to be $x=5$.
+Petal color and petal number were found
+to follow a pattern of correlated evolution ($p=0.00$), 
+suggesting concerted shifts in floral traits may play an important role shaping diversification of Onagraceae. 
 \end{abstract}
 
 \end{frontmatter}
@@ -47,7 +59,8 @@ blah blah
 %% intro
 %%%%%%%%%%%%%%%%%%%%%%%
 
-\linenumbers
+%\modulolinenumbers[5]
+%\linenumbers
 
 \section{Introduction}
 
@@ -127,7 +140,10 @@ Ancestral character state reconstructions of petal number and petal color were p
 over the Bayesian MCC tree.
 Characters were treated as unordered categorical data, and optimized using maximum likelihood
 with the Markov k-state 1 parameter (Mk1) model \citep{lewis2001likelihood}.
-
+Ancestral chromosome numbers were inferred using maximum likelihood and Bayesian methods 
+as implemented in ChromEvol 2.0 \citep{chromevol}.
+Eight different models of chromosome evolution were fit to the Bayesian MCC phylogeny using ChromEvol,
+and the best fit model was selected using Akaike's information criterion \citep{aic}.
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% results
@@ -262,6 +278,20 @@ blah blah
        divergence time estimates and \%95 HPD intervals can be seen in Table \ref{times}.
 }
     \label{genera}
+\end{figure*}
+
+
+\begin{figure*}[p]
+    \vspace*{-2cm}
+    \makebox[\linewidth]{
+        \includegraphics[width=1.6\linewidth, trim=0 0 0 0, clip=true]{chromtree_labeled}
+    }
+    \caption{
+    Maximum likelihood estimates of ancestral chromosome numbers over the Bayesian MCC phylogeny
+    using the 4 parameter ($\lambda$, $\delta$, $\mu$, $\rho$) model of chromosome evolution selected by Akaike's information criterion.
+    The base number of Onagraceae is inferred to be $x=5$.
+    }
+    \label{chromtree}
 \end{figure*}
 
 %%%%%%%%%%%%%%%%%%%%%%%
