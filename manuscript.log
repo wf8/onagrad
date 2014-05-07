@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 MAY 2014 19:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2014 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -480,7 +480,7 @@ Overfull \hbox (4.07574pt too wide) in paragraph at lines 199--205
 /10 The topolo-gies of the ML and Bayesian
  []
 
-[4] [5] <./figures/colored_posterior.pdf, id=154, 1212.53pt x 990.70125pt>
+[4] [5] <./figures/colored_posterior.pdf, id=156, 1212.53pt x 990.70125pt>
 File: ./figures/colored_posterior.pdf Graphic file (type pdf)
 
 <use ./figures/colored_posterior.pdf>
@@ -488,7 +488,7 @@ Package pdftex.def Info: ./figures/colored_posterior.pdf used on input line 297
 .
 (pdftex.def)             Requested size: 552.0021pt x 446.44212pt.
 
-<./figures/time_colored_genera.pdf, id=160, 1065.9825pt x 871.255pt>
+<./figures/time_colored_genera.pdf, id=162, 1065.9825pt x 871.255pt>
 File: ./figures/time_colored_genera.pdf Graphic file (type pdf)
 
 <use ./figures/time_colored_genera.pdf>
@@ -496,31 +496,46 @@ Package pdftex.def Info: ./figures/time_colored_genera.pdf used on input line 3
 11.
 (pdftex.def)             Requested size: 552.0021pt x 445.98279pt.
 
-<./figures/chromtree_labeled.pdf, id=168, 722.7pt x 542.025pt>
+<./figures/chromtree_labeled.pdf, id=170, 722.7pt x 542.025pt>
 File: ./figures/chromtree_labeled.pdf Graphic file (type pdf)
 
 <use ./figures/chromtree_labeled.pdf>
 Package pdftex.def Info: ./figures/chromtree_labeled.pdf used on input line 326
 .
 (pdftex.def)             Requested size: 552.0021pt x 414.00266pt.
- [6] [7 <./figures/colored_posterior.pdf>] [8 <./figures/time_colored_genera.pd
-f>] [9 <./figures/chromtree_labeled.pdf>]
-(./manuscript.bbl [10] [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
+
+<./figures/petal_color.pdf, id=172, 722.7pt x 542.025pt>
+File: ./figures/petal_color.pdf Graphic file (type pdf)
+
+<use ./figures/petal_color.pdf>
+Package pdftex.def Info: ./figures/petal_color.pdf used on input line 339.
+(pdftex.def)             Requested size: 552.0021pt x 414.00266pt.
+
+<./figures/petal_number.pdf, id=174, 722.7pt x 542.025pt>
+File: ./figures/petal_number.pdf Graphic file (type pdf)
+
+<use ./figures/petal_number.pdf>
+Package pdftex.def Info: ./figures/petal_number.pdf used on input line 351.
+(pdftex.def)             Requested size: 552.0021pt x 414.00266pt.
+ [6] [7 <./figures/colored_posterior.pdf>]
+[8 <./figures/time_colored_genera.pdf>] [9 <./figures/chromtree_labeled.pdf>]
+[10 <./figures/petal_color.pdf>] [11 <./figures/petal_number.pdf>]
+(./manuscript.bbl [12] [13])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 912E5B34EC519661EB80F8E2F4DAF8E9;176.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
  ) 
 Here is how much of TeX's memory you used:
- 7770 strings out of 493488
- 113801 string characters out of 3141326
- 217902 words of memory out of 3000000
- 10910 multiletter control sequences out of 15000+200000
+ 7786 strings out of 493488
+ 114131 string characters out of 3141326
+ 218287 words of memory out of 3000000
+ 10920 multiletter control sequences out of 15000+200000
  9046 words of font info for 33 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  34i,9n,37p,508b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -541,10 +556,10 @@ ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2012/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on manuscript.pdf (12 pages, 406294 bytes).
+Output written on manuscript.pdf (14 pages, 1060803 bytes).
 PDF statistics:
- 837 PDF objects out of 1000 (max. 8388607)
- 769 compressed objects within 8 object streams
- 55 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 919 PDF objects out of 1000 (max. 8388607)
+ 832 compressed objects within 9 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
