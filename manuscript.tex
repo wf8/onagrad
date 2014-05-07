@@ -234,8 +234,33 @@ Divergence time estimates of other major clades and 95\% highest posterior densi
    \label{times}
 \end{table*}
 
-\paragraph{Character evolution}
-blah blah
+\paragraph{Chromosome number evolution}
+Out of the eight models of chromosome evolution tested by ChromEvol,
+the four parameter $CONST\_RATE\_DEMI\_EST$ model was the best fit according to the AIC scores. 
+This model has separate rate parameters for
+chromosome gains ($\lambda$),
+losses ($\delta$),
+demi-polyploid events ($\mu$),
+and polyploid events ($\rho$).
+Demi-polyploid events occur when reduced and unreduced gametes unite
+resulting in a $3x$ cytotype.
+The base chromosome number of Onagraceae was estimated to be $x=5$,
+and the ancestral number of the large genus \textit{Epilobium} was estimated to be $n=9$,
+though the extant taxa are split in two large monophyletic clades of 
+$n=10$ and $n=18$, respectively (Figure \ref{chromtree}).
+
+\paragraph{Floral evolution}
+The maximum likelihood estimate of petal color for the 
+last common ancestor of Onagraceae was pink 
+with a proportional likelihood ($PL$) of $0.61$.
+White was the second most likely estimate ($PL=0.11$).
+The maximum likelihood estimate of petal number for the
+last common ancestor of Onagraceae was 4 ($PL=1.0$), with 15
+independent transitions to 0, 2, 5, or 6 petals (Figure XXXX).
+Petal color and petal number were found to significantly covary over the 
+phylogeny ($D=0.263, p=0.00$). Multiple signficant correlations
+($d_{ij}$) were found between individual states of each character
+and are summarized in Table \ref{correlations}.
 
 \begin{table*}
    \center
@@ -255,8 +280,8 @@ blah blah
          \bottomrule
       \end{tabular}
    \end{adjustbox}
-   \caption{Test statistics for the correlation between flower color evolution and petal number evolution. 
-	    $d$ values are shown
+   \caption{Test statistics for the correlation between petal color evolution and petal number evolution. 
+	    $d_{ij}$ values are shown
             for the pairwise comparison of states with $p< 0.01$. $ns$ indicates no significant
 	    association. The overall $D$ value was 0.263 ($p=0.00$).
 	    }
