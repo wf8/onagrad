@@ -40,7 +40,7 @@ Onagraceae is a cosmopolitan plant family in the order Myrtales comprised of 22 
 I used a GenBank data-mining approach to construct an 11 gene supermatrix of 521 taxa in Onagraceae and Lythraceae.
 Maximum likelihood and Bayesian inference phylogenetic analyses were performed, 
 and divergence time estimates were calibrated using 5 fossils.
-Chromosome number evolution was estimated using probabilistic models,
+Chromosome number evolution was inferred using probabilistic models,
 and ancestral states of petal color and petal number were reconstructed using maximum likelihood.
 Correlated evolution between petal color and petal number was tested using
 Bayesian stochastic character mapping.
@@ -49,7 +49,7 @@ and Onagraceae was estimated to have diverged from Lythraceae 109 Mya.
 The base chromosome number of Onagraceae was inferred to be $x=5$.
 Petal color and petal number were found
 to follow a pattern of correlated evolution ($p=0.00$), 
-suggesting concerted shifts in floral traits may play an important role shaping diversification of Onagraceae. 
+suggesting concerted shifts in floral traits may play an important role in shaping diversification of Onagraceae. 
 \end{abstract}
 
 \end{frontmatter}
@@ -75,7 +75,7 @@ What is the pattern of chromosome number evolution?
 
 \paragraph{Supermatrix assembly} 
 
-Lythraceae was selected to use as an outgroup since previous molecular phylogenetic analyses
+Lythraceae was selected as an outgroup since previous molecular phylogenetic analyses
 place it sister to Onagraceae \citep{conti1997, Sytsma2004}.
 I downloaded all DNA sequences from GenBank release 200 PLN division and
 performed an exhaustive all-by-all BLASTn \citep{blast} comparison of sequences in Onagraceae
@@ -91,7 +91,7 @@ two clusters was removed from the supermatrix.
 The program written to data-mine GenBank and assemble the supermatrix 
 is available as the open source Python module 
 SUMAC \citep{sumac}.
-SUMAC can be used to assemble
+SUMAC will assemble
 supermatrices for any taxonomic group recognized in GenBank, 
 and is optimized to run on multicore processors and clusters by utilizing multiple parallel processes.
 
@@ -198,7 +198,7 @@ the supermatrix contained 521 taxa, was 31862 nucleotides long, and contained 93
 \paragraph{Phylogeny and divergence time estimates}
 The topologies of the ML and Bayesian phylogenies were identical for all major clades within Onagraceae, 
 so only the Bayesian MCC tree (Figures \ref{posteriors} and \ref{genera}) is shown here.
-All Onagraceae genera described in \citet{wagner2007revised} were recovered as monophyletic clades with posterior probabilities of $> 0.95$
+All Onagraceae genera described in \citet{wagner2007revised} were recovered as monophyletic clades with posterior probabilities $> 0.95$
 except for sister genera \textit{Neoholmgrenia} and \textit{Camissoniopsis} (posterior = 0.31) (Figure \ref{posteriors}).
 Onagraceae was found to diverge from Lythraceae at 109 Mya (Figure \ref{genera}). 
 Divergence time estimates of other major clades and 95\% highest posterior density (HPD) intervals can be seen in Table \ref{times}.
@@ -283,7 +283,8 @@ and are summarized in Table \ref{correlations}.
    \caption{Test statistics for the correlation between petal color evolution and petal number evolution. 
 	    $d_{ij}$ values are shown
             for the pairwise comparison of states with $p< 0.01$. $ns$ indicates no significant
-	    association. The overall $D$ value was 0.263 ($p=0.00$).
+	    association. Negative $d_{ij}$ values express negative correlation.
+	    The overall $D$ value was 0.263 ($p=0.00$).
 	    }
    \label{correlations}
 \end{table*}
