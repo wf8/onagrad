@@ -1,5 +1,15 @@
 \documentclass[review]{elsarticle}
 
+% to remove elsearticle 'preprint journal'
+\makeatletter
+\def\ps@pprintTitle{%
+ \let\@oddhead\@empty
+ \let\@evenhead\@empty
+ \def\@oddfoot{\centerline{\thepage}}%
+ \let\@evenfoot\@oddfoot}
+\makeatother
+%%\journal{IB200}
+
 \usepackage[hidelinks]{hyperref}
 \usepackage{mathtools}
 \usepackage{adjustbox}
@@ -8,8 +18,6 @@
 \usepackage{lineno}
 
 \graphicspath{ {./figures/} }
-
-\journal{IB200}
 
 %% bibliography styles
 %% Harvard
