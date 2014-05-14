@@ -50,6 +50,11 @@ The base chromosome number of Onagraceae was inferred to be $x=5$.
 Petal color and petal number were found
 to follow a pattern of correlated evolution ($p=0.00$), 
 suggesting concerted shifts in floral traits may play an important role in shaping diversification of Onagraceae. 
+Further analyses should be performed to test whether shifts in
+floral traits are correlated with pollinator shifts,
+and to determine how these shifts affect diversification rates.
+Furthermore, this work should be extended to test historical biogeographical hypotheses
+that explain the intercontinental disjunct distribution of Onagraceae.
 \end{abstract}
 
 \end{frontmatter}
@@ -64,11 +69,35 @@ suggesting concerted shifts in floral traits may play an important role in shapi
 
 \section{Introduction}
 
-Questions: are the taxonomic groups described in \citet{wagner2007revised} monophyletic?
-When did the major clades diverge?
-What are the patterns of petal color and petal number evolution, and
-are their evolution correlated?
-What is the pattern of chromosome number evolution?
+Introduce supermatrix analyses....
+
+Onagraceae, the evening primroses, are a well-studied family
+of flowering plants with 22 described genera and around 660 species \citep{wagner2007revised}.
+The family is found on all continents except Antartica,
+and pollen fossils date Onagraceae to the Upper Cretaceous \citep{grimsson}.
+Onagraceae is well placed in the order Myrtales,
+and previous molecular phylogenetic studies find it most closely related to Lythraceae \citep{conti1997, Sytsma2004}.
+Though there have been many genus-level molecular phylogenetic studies in Onagraceae
+\citep{Berry2004, Evans2009, Hoggard2004, Xie2009, Baum1994, Wagner2005}, 
+the most recent family-level analyses \citep{Levin2003, Levin2004}
+used only one or two exemplars from some genera. 
+Furthermore, the historical biogeography, divergence times of the major clades, and 
+family-level patterns and processes of diversification remain poorly understood.
+With the wealth of data available, Onagraceae is an
+ideal group to apply a data-mining supermatrix approach
+with the goal of constructing a densely sampled family-level phylogeny.
+
+Here, I use a well-resolved supermatrix phylogeny of Onagraceaea to
+answer qestions such as:
+1) Are the taxonomic groups described in \citet{wagner2007revised} monophyletic?
+2) When did the major clades diverge?
+3) What is the pattern of chromosome number
+evolution?
+4) What are the patterns of petal color and petal number evolution, and are their 
+evolution correlated?
+Finally, I also discuss ways in which these analyses can be extended
+to further examine the patterns and processes of
+evolution in Onagraceae.
 
 
 \section{Methods}
@@ -196,9 +225,11 @@ the supermatrix contained 521 taxa, was 31862 nucleotides long, and contained 93
 \end{table*}
 
 \paragraph{Phylogeny and divergence time estimates}
-The topologies of the ML and Bayesian phylogenies were identical for all major clades within Onagraceae, 
+The topologies of the ML and Bayesian phylogenies were nearly identical for all major clades within Onagraceae, 
 so only the Bayesian MCC tree (Figures \ref{posteriors} and \ref{genera}) is shown here.
-All Onagraceae genera described in \citet{wagner2007revised} were recovered as monophyletic clades with posterior probabilities $> 0.95$
+The major exception is that in the ML tree the genus \textit{Chamerion} was recovered
+as sister to \textit{Epilobium}, whereas in the MCC tree XXXXXX.......
+In the MCC tree all Onagraceae genera described in \citet{wagner2007revised} were recovered as monophyletic clades with posterior probabilities $> 0.95$
 except for sister genera \textit{Neoholmgrenia} and \textit{Camissoniopsis} (posterior = 0.31) (Figure \ref{posteriors}).
 Onagraceae was found to diverge from Lythraceae at 109 Mya (Figure \ref{genera}). 
 Divergence time estimates of other major clades and 95\% highest posterior density (HPD) intervals can be seen in Table \ref{times}.
@@ -266,17 +297,17 @@ and are summarized in Table \ref{correlations}.
    \center
    \begin{adjustbox}{max width=\textwidth}
       \setlength{\tabcolsep}{20pt}
-      \begin{tabular}{lllllll}
+      \begin{tabular}{llllll}
          \toprule
-	 & \multicolumn{4}{c}{Number of Petals} \\
-         & 2 & 4 & 5 & 6 \\ 
-	 \cmidrule{2-5}
+	 & \multicolumn{3}{c}{Number of Petals} \\
+         & 2 & 4 & 5 \\ 
+	 \cmidrule{2-4}
 	 Petal Color \\
-         \hspace{3 mm} Pink & -0.005 & .011 & $ns$ & $ns$ \\
-	 \hspace{3 mm} Yellow & -0.008 & .021 & $ns$ & $ns$ \\
-	 \hspace{3 mm} White & 0.008 & 0.013 & -0.006 & -0.006 \\
-	 \hspace{3 mm} Green & $ns$ & -0.011 & $ns$ & $ns$ \\
-	 \hspace{3 mm} Red & $ns$ & $ns$ & $ns$ & $ns$ \\
+         \hspace{3 mm} Pink & -0.005 & .011 & $ns$ \\
+	 \hspace{3 mm} Yellow & -0.008 & .021 & $ns$ \\
+	 \hspace{3 mm} White & 0.008 & 0.013 & -0.006 \\
+	 \hspace{3 mm} Green & $ns$ & -0.011 & $ns$ \\
+	 \hspace{3 mm} Red & $ns$ & $ns$ & $ns$ \\
          \bottomrule
       \end{tabular}
    \end{adjustbox}
@@ -357,13 +388,14 @@ and are summarized in Table \ref{correlations}.
 \end{figure*}
 
 %%%%%%%%%%%%%%%%%%%%%%%
-%% conclusion
+%% discussion
 %%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Conclusion}
+\section{Discussion}
 
-blah blah
-
+discuss monophyly of tribe Epilobieae, which was supported in 
+maximum likelihood analysis but not supported in Bayesian MCC, could be due to
+fossil constraints.....
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% references

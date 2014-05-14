@@ -3,45 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: model2-names.bst
 Database file #1: manuscriptbib.bib
+Warning--to sort, need author or key in Levin2003
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 21 entries,
+Warning--empty author in Levin2003
+You've used 29 entries,
             2990 wiz_defined-function locations,
-            871 strings with 9811 characters,
-and the built_in function-call counts, 13174 in all, are:
-= -- 1004
-> -- 482
-< -- 12
-+ -- 190
-- -- 165
-* -- 1395
-:= -- 1939
-add.period$ -- 62
-call.type$ -- 21
-change.case$ -- 160
-chr.to.int$ -- 21
-cite$ -- 21
-duplicate$ -- 1011
-empty$ -- 991
-format.name$ -- 222
-if$ -- 2433
+            924 strings with 11379 characters,
+and the built_in function-call counts, 18644 in all, are:
+= -- 1431
+> -- 688
+< -- 14
++ -- 270
+- -- 237
+* -- 2013
+:= -- 2711
+add.period$ -- 86
+call.type$ -- 29
+change.case$ -- 224
+chr.to.int$ -- 29
+cite$ -- 33
+duplicate$ -- 1415
+empty$ -- 1400
+format.name$ -- 319
+if$ -- 3447
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 189
-newline$ -- 119
-num.names$ -- 84
-pop$ -- 364
+missing$ -- 268
+newline$ -- 159
+num.names$ -- 112
+pop$ -- 507
 preamble$ -- 1
-purify$ -- 139
+purify$ -- 195
 quote$ -- 0
-skip$ -- 288
+skip$ -- 393
 stack$ -- 0
-substring$ -- 577
-swap$ -- 697
+substring$ -- 861
+swap$ -- 993
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 189
-warning$ -- 0
-while$ -- 92
+type$ -- 261
+warning$ -- 2
+while$ -- 129
 width$ -- 0
-write$ -- 303
+write$ -- 414
+(There were 2 warnings)
