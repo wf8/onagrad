@@ -77,13 +77,28 @@ that explain the intercontinental disjunct distribution of Onagraceae.
 
 \section{Introduction}
 
-Introduce supermatrix analyses....
+Biologists are increasingly using massive phylogenetic
+datasets to reconstruct ever-growing portions of the Tree of Life 
+in pursuit of large-scale evolutionary questions.
+A common approach to building large phylogetic trees has been
+the supermatrix approach, in which multiple datasets are
+combined and analyzed simultaneously \citep{DeQueiroz2007}.
+However, assembling and utilizing supermatrices is not trivial
+due to difficulties such as determining homology of molecular
+sequences, defining operational taxonomic units, 
+and managing the amount of missing data \citep{Roure2007, Yan2005}.
+phlawd and phylota...
+Supermatrix approaches have been successfully used in a number
+of large scale angiosperm evolutionary studies including, bling, blang, blot.
+In this study I use a supermatrix to build a phylogeny of
+the family Onagraceae, and implement a novel method for supermatrix
+construction in a Python package.
 
-Onagraceae, the evening primroses, are a well-studied family
+Onagraceae, the evening primrose family, is a well-studied family
 of flowering plants with 22 described genera and around 660 species \citep{wagner2007revised}.
 The family is found on all continents except Antartica,
 and pollen fossils date Onagraceae to the Upper Cretaceous \citep{grimsson}.
-Onagraceae is well placed in the order Myrtales,
+Onagraceae falls within the order Myrtales,
 and previous molecular phylogenetic studies find it most closely related to Lythraceae \citep{conti1997, Sytsma2004}.
 Though there have been many genus-level molecular phylogenetic studies in Onagraceae
 \citep{Berry2004, Evans2009, Hoggard2004, Xie2009, Baum1994, Wagner2005}, 
@@ -91,21 +106,21 @@ the most recent family-level analyses \citep{Levin2003, Levin2004}
 used only one or two exemplars from some genera. 
 Furthermore, the historical biogeography, divergence times of the major clades, and 
 family-level patterns and processes of diversification remain poorly understood.
-With the wealth of data available, Onagraceae is an
+With over 5000 DNA sequences available in GenBank from previous studies, Onagraceae is an
 ideal group to apply a data-mining supermatrix approach
 with the goal of constructing a densely sampled family-level phylogeny.
 
-Here, I use a well-resolved supermatrix phylogeny of Onagraceaea to
-answer qestions such as:
-1) Are the taxonomic groups described in \citet{wagner2007revised} monophyletic?
-2) When did the major clades diverge?
-3) What is the pattern of chromosome number
-evolution?
-4) What are the patterns of petal color and petal number evolution, and are their 
+Here, I use a well-resolved supermatrix phylogeny of Onagraceae to
+test whether the taxonomic groups described in \citet{wagner2007revised} are monophyletic,
+and to answer the following questions:
+1) When did the major clades diverge?
+2) What is the pattern of chromosome number evolution?
+3) What are the patterns of petal color and petal number evolution, and are their 
 evolution correlated?
-Finally, I also discuss ways in which these analyses can be extended
-to further examine the patterns and processes of
-evolution in Onagraceae.
+Lastly, I discuss ways in which these analyses can be extended
+to further examine the evolution of Onagraceae, 
+and describe some recently developed metrics that can
+be used to assess the informativeness of phylogenetic supermatrices.
 
 
 \section{Methods}
