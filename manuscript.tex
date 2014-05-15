@@ -77,24 +77,30 @@ that explain the intercontinental disjunct distribution of Onagraceae.
 
 \section{Introduction}
 
-Biologists are increasingly using massive phylogenetic
-datasets to reconstruct ever-growing portions of the Tree of Life 
-in pursuit of large-scale evolutionary questions.
-A common approach to building large phylogetic trees has been
+In pursuit of large-scale evolutionary questions,
+biologists are increasingly using massive phylogenetic
+datasets to reconstruct ever-growing portions of the tree of life. 
+A common approach to building large phylogenetic trees has been
 the supermatrix approach, in which multiple datasets are
 combined and analyzed simultaneously \citep{DeQueiroz2007}.
 However, assembling and utilizing supermatrices is not trivial
-due to difficulties such as determining homology of molecular
-sequences, defining operational taxonomic units, 
-and managing the amount of missing data \citep{Roure2007, Yan2005}.
-phlawd and phylota...
-Supermatrix approaches have been successfully used in a number
-of large scale angiosperm evolutionary studies including, bling, blang, blot.
-In this study I use a supermatrix to build a phylogeny of
-the family Onagraceae, and implement a novel method for supermatrix
-construction in a Python package.
+due to challenges such as determining homology of molecular
+sequences, assembling chimeric operational taxonomic units, 
+limiting the amount of missing data,
+and managing data integrity and computational feasibility \citep{Roure2007, Yan2005}.
+Despite these difficulties, considerable bioinformatic advances 
+have made supermatrix construction more common,
+particularly in large-scale evolutionary plant studies.
+For example, \citet{Smith2011}
+inferred a phylogeny of 55473 seed plants,
+\citet{Hinchliff2013} estimated the phylogeny of 1500 members of Cyperaceae,
+and \citet{Sarkinen2013} built a time calibrated tree of Solanaceae with 1076 tips.
 
-Onagraceae, the evening primrose family, is a well-studied family
+With over 5000 DNA sequences available in GenBank from previous studies, 
+the plant family Onagraceae is an
+ideal group to apply a data-mining supermatrix approach.
+Onagraceae, the evening primrose family, is a well-studied 
+monophyletic clade
 of flowering plants with 22 described genera and around 660 species \citep{wagner2007revised}.
 The family is found on all continents except Antartica,
 and pollen fossils date Onagraceae to the Upper Cretaceous \citep{grimsson}.
@@ -105,22 +111,19 @@ Though there have been many genus-level molecular phylogenetic studies in Onagra
 the most recent family-level analyses \citep{Levin2003, Levin2004}
 used only one or two exemplars from some genera. 
 Furthermore, the historical biogeography, divergence times of the major clades, and 
-family-level patterns and processes of diversification remain poorly understood.
-With over 5000 DNA sequences available in GenBank from previous studies, Onagraceae is an
-ideal group to apply a data-mining supermatrix approach
-with the goal of constructing a densely sampled family-level phylogeny.
+family-level patterns and processes of diversification remain poorly understood
+and untested over a molecular phylogeny.
 
-Here, I use a well-resolved supermatrix phylogeny of Onagraceae to
+Here, I use a well-resolved and densely-sampled supermatrix phylogeny of Onagraceae to
 test whether the taxonomic groups described in \citet{wagner2007revised} are monophyletic,
 and to answer the following questions:
 1) When did the major clades diverge?
 2) What is the pattern of chromosome number evolution?
 3) What are the patterns of petal color and petal number evolution, and are their 
 evolution correlated?
-Lastly, I discuss ways in which these analyses can be extended
+Lastly, I consider ways in which these analyses can be extended
 to further examine the evolution of Onagraceae, 
-and describe some recently developed metrics that can
-be used to assess the informativeness of phylogenetic supermatrices.
+and discuss the novel method used here to construct the supermatrix.
 
 
 \section{Methods}
@@ -418,7 +421,37 @@ and are summarized in Table \ref{correlations}.
 
 discuss monophyly of tribe Epilobieae, which was supported in 
 maximum likelihood analysis but not supported in Bayesian MCC, could be due to
-fossil constraints.....
+fossil constraints on genus Epilobium, it may be that the fossil described should
+have constrained Epilobium + Chamerion due to taxonomic changes.....
+need to check fossil synapomorphies to see where it should be placed!
+
+Petal color and petal number were found to follow a pattern 
+of correlated evolution (p = 0.00), 
+suggesting concerted shifts in floral traits 
+may play an important role in shaping diversification of Onagraceae. 
+Further analyses should be performed to test 
+whether shifts in floral traits are correlated with pollinator shifts, 
+and to determine how these shifts affect diversification rates. 
+Furthermore, this work should be extended to test historical 
+biogeographical hypotheses that explain the intercontinental disjunct distribution of Onagraceae.
+
+For example, the PhyLoTA Browser 
+provides a web interface to view all GenBank sequences within
+taxonomic groups clustered into homologs \citep{Sanderson2008}.
+A different approach is implemented in the program PHLAWD,
+which constructs clusters of homologs around
+guide sequences provided by the user \citep{Smith2009}.
+However, the method used by SUMAC combines both approaches;
+the user can perform an exploratory clustering of all GenBank sequences
+within a taxonomic group, and also provide guide sequences to build
+homologous clusters in a more targeted manner. SUMAC provides
+a framework with which GenBank can be repeatedly mined 
+using different taxonomic groups and/or different guide sequences
+and the resulting data matrices can be compared.
+
+describe some recently developed metrics that can
+be used to assess the informativeness of phylogenetic supermatrices.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% references

@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{37}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -117,6 +117,14 @@
 \newblock \bibinfo{journal}{Plant Systematics and Evolution}
   \bibinfo{volume}{298}, \bibinfo{pages}{671--687}.
 %Type = Article
+\bibitem[{Hinchliff and Roalson(2013)}]{Hinchliff2013}
+\bibinfo{author}{Hinchliff, C.E.}, \bibinfo{author}{Roalson, E.H.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{{Using supermatrices for phylogenetic inquiry: an
+  example using the sedges.}}
+\newblock \bibinfo{journal}{Systematic Biology} \bibinfo{volume}{62},
+  \bibinfo{pages}{205--19}.
+%Type = Article
 \bibitem[{Hoggard and Kores(2004)}]{Hoggard2004}
 \bibinfo{author}{Hoggard, G.}, \bibinfo{author}{Kores, P.},
   \bibinfo{year}{2004}.
@@ -207,6 +215,44 @@
   fusion of sequences for phylogenomics.}}
 \newblock \bibinfo{journal}{{BMC Evolutionary Biology}} \bibinfo{volume}{7
   Suppl 1}, \bibinfo{pages}{S2}.
+%Type = Article
+\bibitem[{Sanderson et~al.(2008)Sanderson, Boss, Chen, Cranston and
+  Wehe}]{Sanderson2008}
+\bibinfo{author}{Sanderson, M.J.}, \bibinfo{author}{Boss, D.},
+  \bibinfo{author}{Chen, D.}, \bibinfo{author}{Cranston, K.a.},
+  \bibinfo{author}{Wehe, A.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{{The PhyLoTA Browser: processing GenBank for
+  molecular phylogenetics research.}}
+\newblock \bibinfo{journal}{Systematic Biology} \bibinfo{volume}{57},
+  \bibinfo{pages}{335--46}.
+%Type = Article
+\bibitem[{S\"{a}rkinen et~al.(2013)S\"{a}rkinen, Bohs, Olmstead and
+  Knapp}]{Sarkinen2013}
+\bibinfo{author}{S\"{a}rkinen, T.}, \bibinfo{author}{Bohs, L.},
+  \bibinfo{author}{Olmstead, R.G.}, \bibinfo{author}{Knapp, S.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{{A phylogenetic framework for evolutionary study of
+  the nightshades (Solanaceae): a dated 1000-tip tree.}}
+\newblock \bibinfo{journal}{BMC Evolutionary Biology} \bibinfo{volume}{13},
+  \bibinfo{pages}{214}.
+%Type = Article
+\bibitem[{Smith et~al.(2009)Smith, Beaulieu and Donoghue}]{Smith2009}
+\bibinfo{author}{Smith, S.a.}, \bibinfo{author}{Beaulieu, J.M.},
+  \bibinfo{author}{Donoghue, M.J.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{{Mega-phylogeny approach for comparative biology: an
+  alternative to supertree and supermatrix approaches.}}
+\newblock \bibinfo{journal}{BMC Evolutionary Biology} \bibinfo{volume}{9},
+  \bibinfo{pages}{37}.
+%Type = Article
+\bibitem[{Smith et~al.(2011)Smith, Beaulieu, Stamatakis and
+  Donoghue}]{Smith2011}
+\bibinfo{author}{Smith, S.a.}, \bibinfo{author}{Beaulieu, J.M.},
+  \bibinfo{author}{Stamatakis, A.}, \bibinfo{author}{Donoghue, M.J.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{{Understanding angiosperm diversification using small
+  and large phylogenetic trees.}}
+\newblock \bibinfo{journal}{American Journal of Botany} \bibinfo{volume}{98},
+  \bibinfo{pages}{404--14}.
 %Type = Article
 \bibitem[{Stamatakis(2014)}]{raxml}
 \bibinfo{author}{Stamatakis, A.}, \bibinfo{year}{2014}.
