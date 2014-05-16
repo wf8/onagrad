@@ -52,7 +52,7 @@ Chromosome number evolution was inferred using probabilistic models,
 and ancestral states of petal color and petal number were reconstructed using maximum likelihood.
 Correlated evolution between petal color and petal number was tested using
 Bayesian stochastic character mapping.
-The monophyly of all major clades in Onagraceae was supported,
+The monophyly of all genera in Onagraceae was supported,
 and Onagraceae was estimated to have diverged from Lythraceae 109 Mya. 
 The base chromosome number of Onagraceae was inferred to be $x=5$.
 Petal color and petal number were found
@@ -83,12 +83,12 @@ datasets to reconstruct ever-growing portions of the tree of life.
 A common approach to building large phylogenetic trees has been
 the supermatrix approach, in which multiple datasets are
 combined and analyzed simultaneously \citep{DeQueiroz2007}.
-However, assembling and utilizing supermatrices is not trivial
-due to challenges such as determining homology of molecular
+However, assembling and utilizing supermatrices is challenging
+due to difficulties such as determining homology of molecular
 sequences, assembling chimeric operational taxonomic units, 
 limiting the amount of missing data,
 and managing data integrity and computational feasibility \citep{Roure2007, Yan2005}.
-Despite these difficulties, considerable bioinformatic advances 
+Despite these challenges, considerable bioinformatic advances 
 have made supermatrix construction more common,
 particularly in large-scale evolutionary plant studies.
 For example, \citet{Smith2011}
@@ -96,9 +96,9 @@ inferred a phylogeny of 55473 seed plants,
 \citet{Hinchliff2013} estimated the phylogeny of 1500 members of Cyperaceae,
 and \citet{Sarkinen2013} built a time calibrated tree of Solanaceae with 1076 tips.
 
-With over 5000 DNA sequences available in GenBank from previous studies, 
-the plant family Onagraceae is an
-ideal group to apply a data-mining supermatrix approach.
+The plant family Onagraceae is an
+ideal group to apply a data-mining supermatrix approach
+due to the over 5000 DNA sequences available in GenBank from previous studies.
 Onagraceae, the evening primrose family, is a well-studied 
 monophyletic clade
 of flowering plants with 22 described genera and around 660 species \citep{wagner2007revised}.
@@ -115,15 +115,14 @@ family-level patterns and processes of diversification remain poorly understood
 and untested over a molecular phylogeny.
 
 Here, I use a well-resolved and densely-sampled supermatrix phylogeny of Onagraceae to
-test whether the taxonomic groups described in \citet{wagner2007revised} are monophyletic,
-and to answer the following questions:
-1) When did the major clades diverge?
-2) What is the pattern of chromosome number evolution?
-3) What are the patterns of petal color and petal number evolution, and are their 
-evolution correlated?
+test the monophyly of the taxonomic groups described in \citet{wagner2007revised}
+and estimate when they diverged.
+I then inferred the pattern of chromosome number evolution using probabilistic models and
+examined the patterns of petal color and petal number evolution, 
+including a correlation test of the evolution of these two floral traits.
 Lastly, I consider ways in which these analyses can be extended
 to further examine the evolution of Onagraceae, 
-and discuss the novel method used here to construct the supermatrix.
+and discuss the novel method used here to construct the phylogenetic supermatrix.
 
 
 \section{Methods}
@@ -253,9 +252,11 @@ the supermatrix contained 521 taxa, was 31862 nucleotides long, and contained 93
 \paragraph{Phylogeny and divergence time estimates}
 The topologies of the ML and Bayesian phylogenies were nearly identical for all major clades within Onagraceae, 
 so only the Bayesian MCC tree (Figures \ref{posteriors} and \ref{genera}) is shown here.
-The major exception is that in the ML tree the genus \textit{Chamerion} was recovered
-as sister to \textit{Epilobium}, whereas in the MCC tree XXXXXX.......
-In the MCC tree all Onagraceae genera described in \citet{wagner2007revised} were recovered as monophyletic clades with posterior probabilities $> 0.95$
+The only exception is the tribe Epilobieae \textit{sensu} \citet{wagner2007revised}; 
+the ML analysis recovered tribe Epilobieae as monophyletic, 
+whereas according to the Bayesian estimate it is paraphyletic.
+All Onagraceae genera described in \citet{wagner2007revised} were recovered as monophyletic clades 
+in the Bayesian MCC with posterior probabilities $> 0.95$,
 except for sister genera \textit{Neoholmgrenia} and \textit{Camissoniopsis} (posterior = 0.31) (Figure \ref{posteriors}).
 Onagraceae was found to diverge from Lythraceae at 109 Mya (Figure \ref{genera}). 
 Divergence time estimates of other major clades and 95\% highest posterior density (HPD) intervals can be seen in Table \ref{times}.
@@ -315,7 +316,7 @@ The maximum likelihood estimate of petal number for the
 last common ancestor of Onagraceae was 4 ($PL=1.0$), with 8
 independent transitions to 0, 2, or 5 petals (Figure \ref{petal_number}).
 Petal color and petal number were found to significantly covary over the 
-phylogeny ($D=0.263, p=0.00$). Multiple signficant correlations
+phylogeny ($D=0.263, p=0.00$). Multiple significant correlations
 ($d_{ij}$) were found between individual states of each character
 and are summarized in Table \ref{correlations}.
 
@@ -419,38 +420,99 @@ and are summarized in Table \ref{correlations}.
 
 \section{Discussion}
 
-discuss monophyly of tribe Epilobieae, which was supported in 
-maximum likelihood analysis but not supported in Bayesian MCC, could be due to
-fossil constraints on genus Epilobium, it may be that the fossil described should
-have constrained Epilobium + Chamerion due to taxonomic changes.....
-need to check fossil synapomorphies to see where it should be placed!
+The paraphyly of tribe Epilobieae in the Bayesian MCC tree (Figure \ref{genera})
+conflicts with both the 
+maximum likelihood analysis (not shown) and the previous studies of \citet{Levin2003, Levin2004},
+all of which found tribe Epilobieae to be monophyletic.
+This incongruence is likely due to the placement of the
+fossil constraint on the genus \textit{Epilobium} used in the Bayesian analysis. 
+In this study I followed the taxonomy of \citet{wagner2007revised}, 
+which splits tribe Epilobieae into the sister genera \textit{Epilobium}
+and \textit{Chamerion}.
+However, the pollen morphology descriptions used by \citet{grimsson} to identify the
+\textit{Epilobium} fossil did not recognize \textit{Chamerion} as separate from
+\textit{Epilobium} \citep{Punt2003, Patel1984}. 
+The divergence times will be reestimated using the \textit{Epilobium} fossil 
+to constrain both genera. 
+This will likely result in topological changes to the Bayesian MCC, 
+which means that the 
+trait evolution estimates presented here should be considered preliminary.
 
-Petal color and petal number were found to follow a pattern 
+The reconstruction of ancestral chromosome numbers 
+validates many estimates made by \citet{Raven1979}.
+Raven's estimates of the base chromosome number for the genera
+\textit{Ludwigia}, \textit{Fuchsia}, \textit{Circaea}, \textit{Hauya}, 
+\textit{Epilobium}, \textit{Camissonia}, and \textit{Oenothera}
+all agree with the reconstruction presented here (Figure \ref{chromtree}).
+However, for two genera I report estimates that differ from Raven's: 
+for \textit{Clarkia} $x=9$ and for \textit{Lopezia} $x=10$.
+Furthermore, \citet{Raven1979} proposed that the ancestral
+chromosome number of all Onagraceae was $x=11$, whereas
+my estimate suggests $x=5$. Further testing with the ChromEvol
+models should be carried out, particularly to see if the inclusion
+of the outgroup (Lythraceae) affected the estimate of the
+base chromosome number of Onagraceae.
+
+The analysis of petal color and petal number evolution using
+Bayesian stochastic character mapping
+revealed that the two floral traits followed a pattern 
 of correlated evolution (p = 0.00), 
 suggesting concerted shifts in floral traits 
 may play an important role in shaping diversification of Onagraceae. 
-Further analyses should be performed to test 
-whether shifts in floral traits are correlated with pollinator shifts, 
-and to determine how these shifts affect diversification rates. 
-Furthermore, this work should be extended to test historical 
-biogeographical hypotheses that explain the intercontinental disjunct distribution of Onagraceae.
+To test this, further analyses will be performed to 
+determine if these shifts in floral morphology affect diversification rates.
+Other floral traits, such as corolla width and diurnal or nocturnal flower opening, 
+could be included in future analyses.
+Tests will also be performed to evaluate whether 
+shifts in floral traits are correlated with pollinator shifts.
+These analyses could provide evidence that pollinators are driving the
+evolution of floral morphology in Onagraceae \citep{DeWittSmith2010}.
 
+This work will also be extended to test historical 
+biogeographical hypotheses that explain the intercontinental disjunct distribution of Onagraceae.
+The family-level supermatrix phylogeny will be used to infer the location of the 
+last common ancestor of Onagraceae, which has been hypothesized
+to have been in South America \citep{raven1974angiosperm, raven1988onagraceae}.
+The biogeographical analysis will also test the suggestion made by \citet{Berry2004} that \textit{Fuchsia}
+originated in Central America. 
+To my knowledge this will be the first reconstruction of 
+the historical biogeography of Onagraceae over a molecular phylogeny.
+
+The strength of the supermatrix approach to phylogenetic estimation
+is that it combines data from diverse sources into one large analysis.
+This strength is amplified by data-mining GenBank in an exploratory
+fashion, so that sequence data not necessarily used in previous systematic
+studies can also be incorporated into the supermatrix.
+A number of software tools for building supermatrices are already available 
+that use methods similar to those performed here.
 For example, the PhyLoTA Browser 
 provides a web interface to view all GenBank sequences within
 taxonomic groups clustered into homologs \citep{Sanderson2008}.
 A different approach is implemented in the program PHLAWD,
 which constructs clusters of homologs around
 guide sequences provided by the user \citep{Smith2009}.
-However, the method used by SUMAC combines both approaches;
+However, the method used here (implemented in SUMAC) combines elements of both approaches;
 the user can perform an exploratory clustering of all GenBank sequences
 within a taxonomic group, and also provide guide sequences to build
-homologous clusters in a more targeted manner. SUMAC provides
-a framework with which GenBank can be repeatedly mined 
-using different taxonomic groups and/or different guide sequences
+homologous clusters in a more targeted manner. 
+SUMAC is being extended to calculate metrics that assess
+the informativeness of phylogenetic supermatrices 
+that are unavailable in other software tools.
+For example, the next version of SUMAC will calculate
+an index of substitution saturation based on information entropy \citep{Xia2003}
+for each alignment,
+and also calculate the partial phylogenetic decisiveness 
+of the supermatrix,
+which measures the percentage of trees (out of all possible trees)
+that can be inferred given the data missing from the supermatrix \citep{Sanderson2010, Fischer2012}.
+By calculating these metrics SUMAC will provide a unique
+framework with which GenBank can be repeatedly mined 
+using different settings
 and the resulting data matrices can be compared.
+With further methodological refinement, 
+supermatrix approaches will be indispensable
+to future large-scale phylogenetic studies.
 
-describe some recently developed metrics that can
-be used to assess the informativeness of phylogenetic supermatrices.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%

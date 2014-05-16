@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{46}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -64,6 +64,13 @@
 \newblock \bibinfo{journal}{Systematic Botany} \bibinfo{volume}{22},
   \bibinfo{pages}{629--647}.
 %Type = Article
+\bibitem[{{DeWitt Smith}(2010)}]{DeWittSmith2010}
+\bibinfo{author}{{DeWitt Smith}, S.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{{Using phylogenetics to detect pollinator-mediated
+  floral evolution.}}
+\newblock \bibinfo{journal}{{The New Phytologist}} \bibinfo{volume}{188},
+  \bibinfo{pages}{354--63}.
+%Type = Article
 \bibitem[{Drummond and Rambaut(2007)}]{beast}
 \bibinfo{author}{Drummond, A.J.}, \bibinfo{author}{Rambaut, A.},
   \bibinfo{year}{2007}.
@@ -88,10 +95,17 @@
   {K}leinia).}}
 \newblock \bibinfo{journal}{The {A}merican {N}aturalist} \bibinfo{volume}{173},
   \bibinfo{pages}{225--40}.
+%Type = Article
+\bibitem[{Fischer(2012)}]{Fischer2012}
+\bibinfo{author}{Fischer, M.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{{Perfect taxon sampling and phylogenetically decisive
+  taxon coverage}}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1206.3472} .
 %Type = Misc
 \bibitem[{Freyman(2014)}]{sumac}
 \bibinfo{author}{Freyman, W.A.}, \bibinfo{year}{2014}.
-\newblock \bibinfo{title}{{SUMAC}: {S}upermatrix {C}onstructor}.
+\newblock \bibinfo{title}{{Supermatrix Constructor (SUMAC): a Python package
+  for data mining GenBank and building phylogenetic supermatrices.}}
 \newblock \bibinfo{howpublished}{\url{https://github.com/wf8/sumac}}.
 %Type = Article
 \bibitem[{Glick and Mayrose(2014)}]{chromevol}
@@ -194,6 +208,21 @@
   Environments Workshop (GCE), 2010}, \bibinfo{organization}{IEEE}. pp.
   \bibinfo{pages}{1--8}.
 %Type = Article
+\bibitem[{Patel et~al.(1984)Patel, Skvarla and Raven}]{Patel1984}
+\bibinfo{author}{Patel, V.}, \bibinfo{author}{Skvarla, J.},
+  \bibinfo{author}{Raven, P.}, \bibinfo{year}{1984}.
+\newblock \bibinfo{title}{{Pollen Characters in Relation to the Delimitation of
+  Myrtales}}.
+\newblock \bibinfo{journal}{Annals of the Missouri Botanical Garden}
+  \bibinfo{volume}{71}, \bibinfo{pages}{858--969}.
+%Type = Article
+\bibitem[{Punt et~al.(2003)Punt, Rovers and Hoen}]{Punt2003}
+\bibinfo{author}{Punt, W.}, \bibinfo{author}{Rovers, J.},
+  \bibinfo{author}{Hoen, P.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{{Onagraceae}}.
+\newblock \bibinfo{journal}{Review of Palaeobotany and Palynology}
+  \bibinfo{volume}{123}, \bibinfo{pages}{107--161}.
+%Type = Article
 \bibitem[{de~Queiroz and Gatesy(2007)}]{DeQueiroz2007}
 \bibinfo{author}{de~Queiroz, A.}, \bibinfo{author}{Gatesy, J.},
   \bibinfo{year}{2007}.
@@ -207,6 +236,26 @@
 \newblock \bibinfo{title}{Tracer v1.6}.
 \newblock
   \bibinfo{howpublished}{\url{http://tree.bio.ed.ac.uk/software/tracer/}}.
+%Type = Article
+\bibitem[{Raven(1979)}]{Raven1979}
+\bibinfo{author}{Raven, P.H.}, \bibinfo{year}{1979}.
+\newblock \bibinfo{title}{{A survey of reproductive biology in Onagraceae}}.
+\newblock \bibinfo{journal}{New Zealand Journal of Botany}
+  \bibinfo{volume}{17}, \bibinfo{pages}{575--593}.
+%Type = Incollection
+\bibitem[{Raven(1988)}]{raven1988onagraceae}
+\bibinfo{author}{Raven, P.H.}, \bibinfo{year}{1988}.
+\newblock \bibinfo{title}{Onagraceae as a model of plant evolution}, in:
+  \bibinfo{booktitle}{Plant evolutionary biology}.
+  \bibinfo{publisher}{Springer}, pp. \bibinfo{pages}{85--107}.
+%Type = Article
+\bibitem[{Raven and Axelrod(1974)}]{raven1974angiosperm}
+\bibinfo{author}{Raven, P.H.}, \bibinfo{author}{Axelrod, D.I.},
+  \bibinfo{year}{1974}.
+\newblock \bibinfo{title}{Angiosperm biogeography and past continental
+  movements}.
+\newblock \bibinfo{journal}{Annals of the Missouri Botanical Garden} ,
+  \bibinfo{pages}{539--673}.
 %Type = Article
 \bibitem[{Roure et~al.(2007)Roure, Rodriguez-Ezpeleta and Philippe}]{Roure2007}
 \bibinfo{author}{Roure, B.}, \bibinfo{author}{Rodriguez-Ezpeleta, N.},
@@ -225,6 +274,14 @@
   molecular phylogenetics research.}}
 \newblock \bibinfo{journal}{Systematic Biology} \bibinfo{volume}{57},
   \bibinfo{pages}{335--46}.
+%Type = Article
+\bibitem[{Sanderson et~al.(2010)Sanderson, McMahon and Steel}]{Sanderson2010}
+\bibinfo{author}{Sanderson, M.J.}, \bibinfo{author}{McMahon, M.M.},
+  \bibinfo{author}{Steel, M.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{{Phylogenomics with incomplete taxon coverage: the
+  limits to inference.}}
+\newblock \bibinfo{journal}{BMC evolutionary biology} \bibinfo{volume}{10},
+  \bibinfo{pages}{155}.
 %Type = Article
 \bibitem[{S\"{a}rkinen et~al.(2013)S\"{a}rkinen, Bohs, Olmstead and
   Knapp}]{Sarkinen2013}
@@ -289,6 +346,15 @@
   \bibinfo{author}{Raven, P.H.}, \bibinfo{year}{2007}.
 \newblock \bibinfo{title}{Revised classification of the {O}nagraceae}.
 \newblock \bibinfo{journal}{Systematic Botany Monographs} \bibinfo{volume}{83}.
+%Type = Article
+\bibitem[{Xia et~al.(2003)Xia, Xie, Salemi, Chen and Wang}]{Xia2003}
+\bibinfo{author}{Xia, X.}, \bibinfo{author}{Xie, Z.}, \bibinfo{author}{Salemi,
+  M.}, \bibinfo{author}{Chen, L.}, \bibinfo{author}{Wang, Y.},
+  \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{{An index of substitution saturation and its
+  application.}}
+\newblock \bibinfo{journal}{Molecular phylogenetics and evolution}
+  \bibinfo{volume}{26}, \bibinfo{pages}{1--7}.
 %Type = Article
 \bibitem[{Xie et~al.(2009)Xie, Wagner, Ree, Berry and Wen}]{Xie2009}
 \bibinfo{author}{Xie, L.}, \bibinfo{author}{Wagner, W.L.},
